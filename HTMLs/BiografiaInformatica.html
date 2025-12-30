@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biografía Informática TFG Rodrigo Paradela</title><!--Título de la página-->
+        <link rel="stylesheet" href="../TFG.css"><!--Enlace al CSS de la página-->
+        <script defer src="../JSs/BiografiaInformatica.js"></script><!--Enlace al JS de la página-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+        <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+        <meta name="description" content="Página web TFG de Rodrigo Paradela. Contiene recursos y puntos útiles para cualquier desarrollador."><!--Breve descripción de la página-->
+        <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+        <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->
+    </head>
+    <body>
+        <div class="outer"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+            <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+
+                <!--TÍTULO-->
+    	        <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                    <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                    <P><i>El perfecto cuaderno de bitácora para un desarrollador.</i></P><!--Subtítulo de la página-->
+                </div><!--Fin del div titulo-->
+
+                <!--MENÚ DESPLEGABLE-->
+                <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                    <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="PaginasInteres.html">Páginas de interés</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                        <li><a href="">Puntos de Informático ⬇</a>
+                            <ul class="submenu"><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li correspondiente-->
+                               <li><a href="BuenasPracticas.html">Buenas Prácticas</a></li>
+                               <li><a href="SeguridadInformatica.html">Seguridad Informática</a></li>
+                               <li><a href="TemasImportantes.html">Temas importantes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="HerramientasUtiles.html">Herramientas Útiles</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>  
+                </div><!--Fin del menú desplegable-->
+
+                <!--DESCRIPCIÓN-->
+                <div class="descripcion" style="margin: 40px 5%;"><!--Div con todo el bloque de la descripción. Le damos un color de fondo blanco a diferendia de la home además de bajarle el padding inferior-->
+                    <h1>Descubre tu camino: inspiración, formación y metas en informática</h1><!--Título de la página-->
+                    <div class="descripcion-cols"><!--A diferencia de la home, div que contendrá dos columnas-->
+                        <div class="descripcion-coltexto"><!--Columna con un párrafo para el texto de la descripción-->
+                            <p class="descripcion-texto">
+                                Detrás de cada programador hay una historia única: personas, ideas y momentos que han marcado el inicio de su pasión por la informática. Desde los primeros pasos hasta las metas que aún esperan alcanzarse, todo forma parte de un recorrido que va más allá del código. Comprender ese trayecto es fundamental para valorar lo aprendido, reconocer lo que nos inspira y proyectar con claridad el futuro que queremos construir.<br><br>
+                                En esta sección te presento mi viaje personal dentro del mundo digital: qué me motivó a empezar, cómo ha sido mi proceso de formación y aprendizaje, y hacia dónde quiero dirigir mis conocimientos y energía profesional. A través de frases inspiradoras, experiencias clave y objetivos bien definidos, trazo un mapa que refleja no solo mi crecimiento técnico, sino también humano.<br><br>
+                                Porque ser informático no es solo saber escribir líneas de código: es tener una visión, una motivación y una meta clara. Esta es mi historia, y quizás también encuentres en ella algo que conecte con la tuya. ¡Explora, reflexiona y encuentra tu propia fuente de inspiración!</p>
+                        </div><!--Fin de la columna del texto-->    
+                    
+                        <div class="descripcion-colimg"><!--Columna para la imagen que aparecerá al lado del texto-->
+                            <img src="../IMGs/descripcionbiografiainf.png">
+                        </div><!--Fin de la columna de la imagen-->
+                    </div><!--Fin del div que contiene las dos columnas-->
+                </div><!--Fin de la descripción-->
+
+                <!--FRASES CAMBIANTES-->
+                <div class="frasesCambiantes"><!--Div que contendrá las citas que irán cambiando-->
+                    <p id="frase"><!--párrafo del que modificaremos la frase con JS-->
+                        "Primero resuelve el problema. Después, escribe el código."
+                    </p>
+                    <span id="autor">John Johnson</span><!--Span para el autor de la cita que también cambiará con JS-->
+                </div><!--Fin de las frases cambiantes-->
+
+                <!--TARJETAS REVERSIBLES-->
+                <div class="bloqueTarjetas"><!--Div que contiene todo el bloque de las tarjetas-->
+                    <h2 class="titulo-seccion">Mi trayectoria en informática</h2><!--Título para la sección-->
+                
+                    <div class="tarjetasLineaTiempo"><!--Div con todas las tarjetas para posicionarlas-->
+                        <div class="flip-card"><!--Div con cada tarjeta-->
+                            <div class="flip-card-inner"><!--Div con la información de la tarjeta-->
+                                <div class="flip-card-front"><!--Parte delantera con el título-->
+                                    <h3>TIC en Bachillerato</h3>
+                                </div>
+                                <div class="flip-card-back"><!--Parte trasera con la información-->
+                                    <p>Fue mi primer contacto real con la informática. Ahí empecé a entender que este mundo iba mucho más allá de usar un ordenador.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>1er año en Ingeniería Informática</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Me metí de lleno en la teoría más dura. Aunque no continué por ese camino, fue una base importante que me ayudó a tomar decisiones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>Inicio de DAM</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Un cambio de rumbo que encajaba más conmigo. Aquí empecé a ver la programación desde una perspectiva práctica y aplicable.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>Proyecto grande en Java</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Mi primer proyecto serio, con estructura, errores, aprendizaje y muchas líneas de código. Supuso un antes y un después.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h3>Prácticas en empresa</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Aplicar lo aprendido en un entorno real me ayudó a ver la informática desde dentro. Fue clave para confirmar que esto es lo mío.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="footer-cols">
+                        <div class="footer-col">
+                            <h3><i>Puntos de informático</i></h3>
+                            <ul>
+                                <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <h3><i>Navegación</i></h3>
+                            <ul>
+                                <li><a href="Index.html">Inicio</a></li>
+                                <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                                <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <h3><i>Información</i></h3>
+                            <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                            <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                        </div>
+                    </div>
+                
+                    <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                        <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                    </div>
+                </div>
+
+            </div><!--Fin del div estructura-->
+        </div><!--Fin del div outer-->
+    </body>
+</html>

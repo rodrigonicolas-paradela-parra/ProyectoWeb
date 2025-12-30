@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seguridad Informática TFG Rodrigo Paradela</title><!--Título de la página-->
+        <link rel="stylesheet" href="../TFG.css"><!--Enlace al CSS de la página-->
+        <script defer src="../JSs/Desplegables.js"></script><!--Enlace al JS de la página-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+        <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+        <meta name="description" content="Protege tus dispositivos y datos con buenas prácticas de seguridad informática. Conoce las amenazas más comunes y aprende a navegar, trabajar y conectarte de forma segura."><!--Breve descripción de la página-->
+        <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+        <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->
+    </head>
+    <body>
+        <div class="outer"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+            <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+    
+                <!--TÍTULO-->
+                <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                    <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                    <p><i>El perfecto cuaderno de bitácora para un desarrollador.</i></p><!--Subtítulo de la página-->
+                </div><!--Fin del div titulo-->
+    
+                <!--MENÚ DESPLEGABLE-->
+                <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                    <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="PaginasInteres.html">Páginas de interés</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                        <li><a href="">Puntos de Informático ⬇</a>
+                            <ul class="submenu"><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li correspondiente-->
+                                <li><a href="BuenasPracticas.html">Buenas Prácticas</a></li>
+                                <li><a href="TemasImportantes.html">Temas importantes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="HerramientasUtiles.html">Herramientas Útiles</a></li>
+                        <li><a href="BiografiaInformatica.html">Biografía informática</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>  
+                </div><!--Fin del menú desplegable-->
+    
+                <!--DESCRIPCIÓN-->
+                <div class="descripcion" style="margin: 40px 5%;"><!--Div con todo el bloque de la descripción. Le damos un color de fondo blanco a diferendia de la home además de bajarle el padding inferior-->
+                    <h1>Navega y trabaja con confianza: claves para proteger tu seguridad</h1><!--Título de la página-->
+                    <div class="descripcion-cols"><!--A diferencia de la home, div que contendrá dos columnas-->
+                        <div class="descripcion-coltexto"><!--Columna con un párrafo para el texto de la descripción-->
+                            <p class="descripcion-texto">En el entorno digital actual, proteger nuestros dispositivos, datos y conexiones es tan importante como saber programar o utilizar herramientas informáticas. La seguridad informática no solo se trata de evitar ataques, sino de adoptar una mentalidad preventiva y responsable en el uso diario de la tecnología.<br><br>
+                                Desde amenazas como el malware o el phishing hasta errores humanos como el uso de contraseñas débiles, cualquier descuido puede comprometer la integridad de tu trabajo y tu información personal. Por eso, conocer los riesgos y aplicar buenas prácticas de seguridad es fundamental para cualquier informático o usuario habitual de ordenadores.<br><br>
+                                En esta sección aprenderás a identificar los principales peligros, a proteger tus dispositivos y cuentas, y a mejorar tu comportamiento digital con hábitos seguros. Ya seas estudiante, profesional o simplemente curioso, aquí encontrarás consejos prácticos que te permitirán desenvolverte con mayor tranquilidad y confianza en el mundo digital. ¡Refuerza tu seguridad y cuida tu entorno informático desde hoy!
+                            </p>
+                        </div><!--Fin de la columna del texto-->    
+                    
+                        <div class="descripcion-colimg"><!--Columna para la imagen que aparecerá al lado del texto-->
+                            <img src="../IMGs/descripcionseginf.png">
+                        </div><!--Fin de la columna de la imagen-->
+                    </div><!--Fin del div que contiene las dos columnas-->
+                </div><!--Fin de la descripción-->
+
+                <!--¿Qué es la seguridad informática?-->
+                <div class="bloqueSegInf"><!--Div con todo el bloque de la pregunta-->
+                    <div class="columnaSegImg"><!--Div con la columna que contiene la imagen-->
+                        <img src="../IMGs/seginf.png">
+                    </div><!--Fin del div que contiene la imagen-->
+                    <div class="columnaSegTexto"><!--Div que contiene la columna con la pregunta y con su respuesta -->
+                        <h2>¿Qué es la seguridad informática?</h2>
+                        <p>La seguridad informática es el conjunto de técnicas, políticas y prácticas destinadas a proteger los sistemas informáticos y la información que almacenan o procesan frente a amenazas externas e internas. Su objetivo principal es garantizar la confidencialidad, la integridad y la disponibilidad de los datos y los recursos digitales.</p>
+                        <p>Esto implica prevenir accesos no autorizados, evitar la pérdida o alteración de información, y asegurar que los servicios tecnológicos estén disponibles cuando se necesiten. En un mundo cada vez más conectado, comprender y aplicar principios de seguridad informática es esencial para trabajar de forma segura y responsable, tanto a nivel personal como profesional.</p>
+                    </div><!--Fin del div que contiene la columna del texto-->
+                </div><!--Fin del div de qué es la seguridad informática-->
+
+                <!--SEGURIDAD INFORMÁTICA DESPLEGABLES--><!--Siguen la misma estructura y diseño que los desplegables de buenas prácticas por eso tienen las mismas clases-->
+                <div class="buenasPracticas"><!--Div que contiene todo el bloque de los desplegables de seguridad informática-->
+                    <h2></h2><!--Título para el bloque-->
+                    <div class="bloqueBuenasPracticas"><!--Div que contiene los desplegables juntos-->
+
+                        <div class="desplegable"><!--Div que muestra el nombre del primer grupo y sirve como botón para mostrar el desplegable que es el div de debajo-->
+                        <span>Tipos de amenazas comunes en seguridad informática<br><p style="font-size: 14px; margin: 0; padding: 0;">Conocer las amenazas más frecuentes es clave para prevenir ataques y mantener la seguridad digital.</p></span><span>+</span><!--Añadimos el título del grupo con una breve descripción además de un "+" para dar la sensación de desplegable-->
+                        </div><!--Fin del div con el título del grupo-->
+                        <div class="grupoBuenasPrac"><!--Div que contiene todo el contenido del primer desplegable-->
+                        
+                            <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Malware</span><span>+</span> 
+                            </div>
+                            <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        El malware es cualquier tipo de software diseñado para infiltrarse o dañar un sistema sin el consentimiento del usuario. Engloba diversas amenazas como virus, troyanos, gusanos, ransomware y spyware, que pueden afectar la confidencialidad, integridad y disponibilidad de la información.
+                                    </p>
+                                    <p>
+                                        Estos programas maliciosos pueden robar información, cifrar datos para pedir rescate o controlar el equipo a distancia. Su detección y eliminación suele requerir herramientas especializadas y una buena higiene digital para evitar infecciones.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, el ransomware WannaCry, que en 2017 afectó a miles de ordenadores en hospitales y empresas, cifró archivos y exigió un pago para liberar el acceso, causando pérdidas millonarias y graves interrupciones en los servicios.
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                         
+                            <div class="desplegable2">
+                            <span>Phishing</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        El phishing es una técnica de engaño digital donde un atacante se hace pasar por una entidad confiable, como un banco, una red social o una tienda online, para engañar al usuario y obtener datos sensibles como contraseñas, números de tarjeta o información personal.
+                                    </p>
+                                    <p>
+                                        Este método suele utilizar correos electrónicos, mensajes o páginas web falsas que imitan a las originales, con el objetivo de que el usuario confíe y proporcione su información sin sospechar.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, puedes recibir un correo supuestamente de “PayPal” que te redirige a una página clonada donde te solicitan la contraseña y número de tarjeta, pero en realidad es un fraude diseñado para robar tus datos.
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                         
+                            <div class="desplegable2">
+                            <span>Ingeniería Social</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        La ingeniería social es una técnica que se basa en manipular emocional o psicológicamente a las personas para obtener información confidencial o acceso a sistemas, sin necesidad de emplear herramientas técnicas o software malicioso.
+                                    </p>
+                                    <p>
+                                        Esta técnica explota la confianza, la curiosidad o el miedo de la víctima para que entregue datos sensibles, contraseñas o realice acciones que comprometan la seguridad.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, un atacante puede llamar haciéndose pasar por soporte técnico y convencer al usuario para que instale un programa malicioso, lo que le permitirá acceder al equipo o a información privada.
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                         
+                            <div class="desplegable2">
+                            <span>Ataques DDoS (Denegación de servicio distribuido)</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Un ataque DDoS (Denegación de Servicio Distribuido) consiste en saturar un servidor o servicio con un volumen enorme de tráfico proveniente de múltiples fuentes simultáneas. El objetivo es colapsar el sistema y hacerlo inaccesible para usuarios legítimos, causando interrupciones y pérdidas económicas.
+                                    </p>
+                                    <p>
+                                        Estos ataques pueden afectar tanto a pequeñas empresas como a grandes plataformas, interrumpiendo sus operaciones y generando daños en la reputación.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, sitios de gran alcance como GitHub o Twitter han sido víctimas de ataques DDoS que les provocaron caídas y falta de servicio durante varias horas.
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                         
+                        </div><!--Fin del div con el contenido del primer desplegable-->
+                        
+                        <div class="desplegable">
+                            <span>Buenas prácticas de seguridad para el usuario<br><p style="font-size: 14px; margin: 0; padding: 0;">Adoptar hábitos seguros en el uso diario de la tecnología ayuda a proteger tu información y reducir riesgos innecesarios.</p></span><span>+</span>
+                        </div>
+                        <div class="grupoBuenasPrac">
+                        
+                            <div class="desplegable2">
+                                <span>Contraseñas seguras</span><span>+</span> 
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            Utilizar contraseñas largas, únicas y complejas es fundamental para proteger tus cuentas y reducir el riesgo de accesos no autorizados. Una contraseña robusta combina letras mayúsculas, minúsculas, números y símbolos, dificultando su descifrado mediante ataques automatizados o adivinación.
+                                        </p>
+                                        <p>
+                                            Además, evitar usar la misma contraseña en múltiples sitios es vital para minimizar daños en caso de filtraciones. Se recomienda usar gestores de contraseñas que generen y almacenen credenciales únicas de forma segura, facilitando su manejo.
+                                        </p>
+                                        <p>
+                                            Por ejemplo, en lugar de usar una contraseña sencilla como “contraseña123”, una opción mucho más segura sería “M!p3rro_R0meo2025”, que mezcla diferentes tipos de caracteres y es difícil de adivinar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Autenticación en dos pasos (2FA)</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            La autenticación en dos pasos (2FA) es un método de seguridad que añade una capa extra más allá de la contraseña tradicional. Además de ingresar tu contraseña, se requiere un segundo factor de verificación, como un código temporal enviado a tu móvil o generado por una app especializada.
+                                        </p>
+                                        <p>
+                                            Esta técnica reduce significativamente el riesgo de accesos no autorizados, incluso si alguien logra obtener tu contraseña, ya que necesitará también el segundo factor para entrar en tu cuenta.
+                                        </p>
+                                        <p>
+                                            Por ejemplo, cuando accedes a tu correo electrónico, primero introduces tu contraseña y luego recibes un código vía SMS o mediante una aplicación como Google Authenticator que debes ingresar para completar el acceso.
+                                        </p>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Enlaces y archivos sospechosos</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            Evitar hacer clic en enlaces desconocidos o descargar archivos adjuntos de fuentes no confiables es una práctica esencial para proteger tu equipo de infecciones y fraudes. Muchos ataques informáticos comienzan con este tipo de distracciones que buscan engañar al usuario para que baje la guardia.
+                                        </p>
+                                        <p>
+                                            Además, es importante verificar la extensión de los archivos, ya que algunos pueden aparentar ser documentos comunes pero en realidad contienen código malicioso que se ejecuta al abrirlos.
+                                        </p>
+                                        <p>
+                                            Por ejemplo, un archivo adjunto en un correo que parece ser una factura legítima, llamado “factura.pdf.exe”, puede ser un programa malicioso que infecta el sistema si se ejecuta sin precaución.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Revisar permisos de aplicaciones y servicios</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            Conceder más permisos de los necesarios a aplicaciones y servicios puede comprometer tu privacidad y seguridad. Muchas veces, apps solicitan acceso a datos o funciones que no necesitan para su funcionamiento, lo que puede ser usado para recopilar información personal o realizar acciones no deseadas.
+                                        </p>
+                                        <p>
+                                            Es fundamental revisar periódicamente los permisos otorgados, especialmente en dispositivos móviles, y revocar aquellos que resulten excesivos o sospechosos para proteger tu información y evitar posibles riesgos.
+                                        </p>
+                                        <p>
+                                            Por ejemplo, una aplicación de linterna que solicita acceso a tus contactos y ubicación puede estar recopilando datos innecesarios para venderlos a terceros o incluso para espiar tu actividad, lo que representa un grave riesgo para tu privacidad.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Realizar copias de seguridad</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            Realizar copias de seguridad periódicas es una práctica fundamental para proteger tus datos frente a pérdidas ocasionadas por malware, errores humanos, fallos de hardware o incluso desastres naturales. Estas copias permiten recuperar información crítica sin depender de soluciones costosas o riesgosas.
+                                        </p>
+                                        <p>
+                                            Puedes guardar tus archivos importantes en discos externos, servicios en la nube o servidores seguros. Además, automatizar este proceso reduce la posibilidad de olvidar hacer las copias.
+                                        </p>
+                                        <p>
+                                            Por ejemplo, una copia semanal de tus documentos, fotos y proyectos en un disco externo o en la nube puede salvarte ante un ataque de ransomware que cifre todos tus archivos, evitando perder información valiosa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Cerrar sesiones en dispositivos compartidos</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            Cerrar sesiones después de usar dispositivos públicos o compartidos es una práctica básica pero esencial para proteger tu información personal y evitar accesos no autorizados. Muchas veces, los usuarios olvidan cerrar sesión en servicios como correo electrónico, redes sociales o plataformas bancarias, lo que puede poner en riesgo su seguridad.
+                                        </p>
+                                        <p>
+                                            Además, cerrar sesión ayuda a prevenir que otras personas accedan a tus cuentas, cambien configuraciones o utilicen tu identidad digital para actividades maliciosas.
+                                        </p>
+                                        <p>
+                                            Por ejemplo, si usas un ordenador en una biblioteca o en un cibercafé y no cierras sesión, el siguiente usuario podría revisar tus correos, enviar mensajes o incluso realizar compras si tienes datos guardados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="desplegable">
+                            <span>Protección del dispositivo<br><p style="font-size: 14px; margin: 0; padding: 0;">Mantener el equipo protegido con herramientas y configuraciones adecuadas reduce vulnerabilidades y previene accesos no autorizados.</p></span><span>+</span>
+                        </div>
+                        <div class="grupoBuenasPrac">
+                        
+                            <div class="desplegable2">
+                                <span>Antivirus actualizado</span><span>+</span> 
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> Un antivirus actualizado es esencial para proteger tu dispositivo frente a amenazas nuevas y cambiantes. Este software analiza archivos y programas en tiempo real, detectando virus, malware, spyware y otros ataques antes de que puedan causar daño. Las actualizaciones constantes permiten que el antivirus reconozca las últimas amenazas emergentes, manteniendo la seguridad al día.
+                                        </p>
+                                        <p>
+                                            Mantener el antivirus activo y actualizado garantiza una defensa proactiva, evitando infecciones que pueden afectar la privacidad, el rendimiento del equipo o provocar pérdidas de información.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Programas como Windows Defender o Avast actualizan sus bases de datos regularmente para detectar y aislar un archivo malicioso descargado accidentalmente, poniendo el archivo en cuarentena y notificando al usuario para evitar daños.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Firewall activado</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> El firewall es una barrera de seguridad que supervisa y controla el tráfico de datos entre tu dispositivo y redes externas como Internet. Su función principal es bloquear conexiones no autorizadas o potencialmente peligrosas, protegiendo tu sistema de accesos indebidos y ataques externos.
+                                        </p>
+                                        <p>
+                                            Tener el firewall activado asegura que solo las aplicaciones y servicios confiables puedan enviar o recibir información, reduciendo el riesgo de intrusiones o de que malware se comunique con servidores externos.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Si un programa intenta abrir un puerto inseguro para recibir datos no solicitados, el firewall puede bloquear ese intento y alertar al usuario, previniendo posibles accesos no deseados o intentos de hacking.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Cifrado de datos</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> El cifrado de datos es un proceso que transforma la información en un formato codificado e ilegible para cualquier persona que no posea la clave correcta para descifrarla. Esto protege la confidencialidad de tus archivos y comunicaciones, incluso si alguien logra acceder físicamente a tu dispositivo o interfiere en las transmisiones de datos.
+                                        </p>
+                                        <p>
+                                            Aplicar cifrado en discos duros, archivos o comunicaciones es fundamental para prevenir el robo o la exposición de información sensible, garantizando que solo usuarios autorizados puedan acceder a los datos.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Herramientas como BitLocker en Windows o FileVault en Mac cifran el contenido completo del disco duro, de modo que si el equipo es perdido o robado, los archivos permanecen inaccesibles sin la contraseña o clave de cifrado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Actualizaciones del sistema y software</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> Mantener actualizado el sistema operativo y el software instalado es fundamental para corregir errores, optimizar el rendimiento y, especialmente, para cerrar vulnerabilidades que podrían ser explotadas por atacantes para comprometer la seguridad del dispositivo.
+                                        </p>
+                                        <p>
+                                            Las actualizaciones regulares garantizan que tu equipo tenga las últimas mejoras en protección, evitando ataques basados en fallos conocidos y mejorando la estabilidad general del sistema.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Una actualización de seguridad de Windows puede cerrar una brecha que permitía ejecutar código malicioso desde una página web sin que el usuario lo notara, protegiendo así tu información y tu dispositivo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="desplegable">
+                            <span>Tipos de malware y cómo actúan<br><p style="font-size: 14px; margin: 0; padding: 0;">Existen diferentes clases de malware, cada una con su propia forma de infectar y dañar sistemas. Conocerlas es esencial para prevenirlas a tiempo.</p></span><span>+</span>
+                        </div>
+                        <div class="grupoBuenasPrac">
+                            
+                            <div class="desplegable2">
+                                <span>Virus</span><span>+</span> 
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> Un virus es un tipo de malware que se adjunta a archivos legítimos y se replica al ejecutarse, propagándose entre archivos o dispositivos. Los virus pueden dañar archivos, corromper datos y afectar el rendimiento del sistema.
+                                        </p>
+                                        <p>
+                                            A menudo requieren la acción del usuario para activarse, como abrir un archivo infectado o ejecutar un programa comprometido. Su propagación puede ser rápida y silenciosa, poniendo en riesgo la seguridad de los datos.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Un archivo de Word infectado que, al abrirse, ejecuta código malicioso que afecta a otros documentos del sistema, replicando el virus y dañando información esencial.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Gusano (Worm)</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> A diferencia de los virus, los gusanos son malware que se propagan automáticamente sin necesidad de intervención del usuario ni de adjuntarse a archivos. Se transmiten principalmente a través de redes y conexiones, explotando vulnerabilidades para infectar sistemas de forma rápida y masiva.
+                                        </p>
+                                        <p>
+                                            Debido a su capacidad de replicación autónoma, pueden saturar redes y causar graves daños a la infraestructura tecnológica.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> El gusano ILOVEYOU infectó millones de ordenadores a nivel mundial a través de correos electrónicos con un archivo adjunto malicioso, causando pérdidas significativas y obligando a muchas empresas a tomar medidas urgentes para contenerlo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="desplegable2">
+                                <span>Troyano</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> Un troyano es un tipo de malware que se presenta como un programa legítimo para engañar al usuario y conseguir que lo instale. A diferencia de un virus o gusano, no se replica por sí mismo, sino que actúa abriendo una puerta trasera para que un atacante pueda controlar el sistema de forma remota, robar información o instalar otros programas maliciosos.
+                                        </p>
+                                        <p>
+                                            Los troyanos pueden pasar desapercibidos durante largo tiempo y son muy peligrosos porque permiten acceso directo al atacante, comprometiendo la seguridad y privacidad del equipo infectado.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Una aplicación que parece un visor de fotos, pero al ejecutarse instala un software oculto que da acceso remoto al atacante, permitiéndole controlar el ordenador y robar datos personales.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Ransomware</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> El ransomware es un tipo de malware que cifra los archivos o bloquea el acceso a todo el sistema del dispositivo infectado, impidiendo su uso hasta que se pague un rescate, generalmente en criptomonedas para dificultar el rastreo del pago.
+                                        </p>
+                                        <p>
+                                            Esta amenaza ha crecido significativamente en los últimos años y afecta tanto a usuarios particulares como a empresas e instituciones, causando pérdidas económicas, interrupciones de servicios y riesgos para la privacidad.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> El ransomware WannaCry infectó miles de ordenadores en todo el mundo en 2017, afectando hospitales, empresas y organismos gubernamentales, y exigía un pago en bitcoins para restaurar el acceso a los archivos cifrados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desplegable2">
+                                <span>Spyware</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> El spyware es un tipo de software malicioso que se instala de forma oculta en un dispositivo para espiar la actividad del usuario sin su conocimiento. Puede registrar pulsaciones de teclas, historial de navegación, contraseñas, e incluso activar el micrófono o la cámara para monitorear en tiempo real.
+                                        </p>
+                                        <p>
+                                            Este tipo de malware se utiliza para recopilar información sensible con fines delictivos, como robo de identidad, acceso no autorizado a cuentas o espionaje corporativo.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Un spyware puede capturar todo lo que escribes en tu teclado y enviar esa información a un atacante, incluyendo datos confidenciales como contraseñas, números de tarjetas o mensajes privados, sin que el usuario se dé cuenta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="desplegable2">
+                                <span>Adware</span><span>+</span>
+                            </div>
+                            <div class="buenaPrac">
+                                <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                    <div>
+                                        <p>
+                                            <strong>Descripción:</strong> Aunque el adware no siempre es dañino, se caracteriza por mostrar publicidad no deseada de manera constante, lo que puede resultar molesto y ralentizar el rendimiento del equipo. Además, muchas veces recopila datos sobre tu actividad en línea para crear perfiles que permitan mostrar anuncios personalizados.
+                                        </p>
+                                        <p>
+                                            Esta práctica afecta la privacidad del usuario y puede generar una experiencia de uso intrusiva, con ventanas emergentes y redireccionamientos inesperados.
+                                        </p>
+                                        <p>
+                                            <strong>Ejemplo:</strong> Instalar una aplicación gratuita que, sin permiso claro, comienza a mostrar anuncios emergentes constantes en el navegador, dificultando la navegación y afectando el rendimiento general del sistema.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!--Fin del div de los desplegables-->
+                </div><!--Fin del div del bloque de la seguridad informática-->
+                
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="footer-cols">
+                        <!-- Columna de contacto -->
+                        <div class="footer-col">
+                            <h3><i>Puntos de informático</i></h3>
+                            <ul>
+                                <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Columna de navegación -->
+                        <div class="footer-col">
+                            <h3><i>Navegación</i></h3>
+                            <ul>
+                                <li><a href="Index.html">Inicio</a></li>
+                                <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                                <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Columna de información -->
+                        <div class="footer-col">
+                            <h3><i>Información</i></h3>
+                            <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                            <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                        </div>
+                    </div>
+                
+                    <!-- Línea de derechos de autor -->
+                    <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                        <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                    </div>
+                </div>
+            </div><!--Fin del div estructura-->
+        </div><!--Fin del div outer-->
+    </body>
+</html>
+

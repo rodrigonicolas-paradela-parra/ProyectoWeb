@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buenas Prácticas TFG Rodrigo Paradela</title><!--Título de la página-->
+    <link rel="stylesheet" href="../TFG.css"><!--Enlace al CSS de la página-->
+    <script defer src="../JSs/Desplegables.js"></script><!--Enlace al JS de la página-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+    <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+    <meta name="description" content="Buenas prácticas para sacar el máximo rendimiento a tu ordenador y mejorar tu productividad como informático. Consejos sobre uso eficiente, programación y mantenimiento del equipo."><!--Breve descripción de la página-->
+    <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+    <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->
+</head>
+<body>
+    <div class="outer"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+        <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+
+            <!--TÍTULO-->
+            <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                <p><i>El perfecto cuaderno de bitácora para un desarrollador.</i></p><!--Subtítulo de la página-->
+            </div><!--Fin del div titulo-->
+
+            <!--MENÚ DESPLEGABLE-->
+            <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="PaginasInteres.html">Páginas de interés</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                    <li><a href="">Puntos de Informático ⬇</a>
+                        <ul class="submenu"><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li correspondiente-->
+                            <li><a href="SeguridadInformatica.html">Seguridad Informática</a></li>
+                            <li><a href="TemasImportantes.html">Temas importantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="HerramientasUtiles.html">Herramientas Útiles</a></li>
+                    <li><a href="BiografiaInformatica.html">Biografía Informática</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>  
+            </div><!--Fin del menú desplegable-->
+
+            <!--DESCRIPCIÓN-->
+            <div class="descripcion" style="margin: 40px 5%;"><!--Div con todo el bloque de la descripción. Le damos un color de fondo blanco a diferendia de la home además de bajarle el padding inferior-->
+                <h1>Domina tu entorno digital: buenas prácticas informáticas</h1><!--Título de la página-->
+                <div class="descripcion-cols"><!--A diferencia de la home, div que contendrá dos columnas-->
+                    <div class="descripcion-coltexto"><!--Columna con un párrafo para el texto de la descripción-->
+                        <p class="descripcion-texto">En el ámbito informático, no basta con saber utilizar herramientas: adoptar hábitos eficientes y saludables en el trabajo diario puede marcar una gran diferencia. Las buenas prácticas en el uso del ordenador, la programación y la organización de proyectos no solo mejoran la productividad, sino que también contribuyen a reducir errores, facilitar el mantenimiento y optimizar los recursos.<br><br>
+                            En esta sección descubrirás un conjunto de recomendaciones y rutinas que te ayudarán a trabajar de forma más ordenada, eficiente y profesional. Desde cómo estructurar tus carpetas y proyectos, hasta consejos para programar con claridad y mantener tu equipo en buen estado, aquí encontrarás pautas útiles tanto para estudiantes como para profesionales del sector.<br><br>
+                            Aplicar estas buenas prácticas te permitirá avanzar con mayor seguridad en tus proyectos, ahorrar tiempo y adquirir una metodología sólida que te será útil en cualquier etapa de tu carrera informática. ¡Empieza a mejorar tu flujo de trabajo desde hoy!
+                        </p>
+                    </div><!--Fin de la columna del texto-->    
+
+                    <div class="descripcion-colimg"><!--Columna para la imagen que aparecerá al lado del texto-->
+                        <img src="../IMGs/descripcionbuenaspract.png">
+                    </div><!--Fin de la columna de la imagen-->
+                </div><!--Fin del div que contiene las dos columnas-->
+            </div><!--Fin de la descripción-->
+
+            <!--BUENAS PRÁCTICAS-->
+            <div class="buenasPracticas"><!--Div que contiene todo el bloque de los desplegables de las buenas prácticas-->
+                <h2>LISTADO DE BUENAS PRÁCTICAS</h2><!--Título para el bloque-->
+                <div class="bloqueBuenasPracticas"><!--Div que contiene los desplegables juntos-->
+                    
+                    <div class="desplegable"><!--Div que muestra el nombre del primer grupo y sirve como botón para mostrar el desplegable que es el div de debajo-->
+                        <span>Mantenimiento y uso eficiente del ordenador<br><p style="font-size: 14px; margin: 0; padding: 0;">Asegurar el buen funcionamiento del equipo, optimizar el rendimiento y prolongar su vida útil.</p></span><span>+</span><!--Añadimos el título del grupo con una breve descripción además de un "+" para dar la sensación de desplegable-->
+                    </div><!--Fin del div con el título del grupo-->
+                    <div class="grupoBuenasPrac"><!--Div que contiene todo el contenido del primer desplegable-->
+                        
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Desinstalar software innecesario</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div><!--Div con los párrafos de texto-->
+                                    <p>
+                                      Desinstalar software innecesario es una práctica esencial para mantener el rendimiento óptimo de tu ordenador y evitar conflictos entre programas. Al eliminar aplicaciones que ya no usas, liberas espacio en disco, reduces el consumo de recursos y previenes posibles vulnerabilidades de seguridad asociadas a software obsoleto o abandonado.
+                                    </p>
+                                    <p>
+                                      Por ejemplo, si tienes instalado un programa que utilizaste una vez para un proyecto puntual y que ya no necesitas, dejarlo puede ralentizar el sistema con procesos en segundo plano o actualizaciones automáticas que consumen recursos. Al desinstalarlo, mejoras la velocidad general y la estabilidad de tu equipo, además de facilitar el mantenimiento y la gestión de software.
+                                    </p>
+                                    <p>
+                                      Esta buena práctica también contribuye a una organización más clara y a una experiencia informática más ágil, evitando confusiones y simplificando las actualizaciones y respaldos del sistema.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Limpiar archivos temporales regularmente</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Limpiar archivos temporales regularmente es una práctica fundamental para mantener tu ordenador funcionando de manera fluida y evitar que el espacio en disco se llene innecesariamente. Estos archivos se generan al usar aplicaciones, navegar por internet o instalar programas, y si no se eliminan, pueden acumularse hasta ocupar varios gigabytes que afectan negativamente el rendimiento del sistema.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, en Windows puedes utilizar herramientas integradas como el Liberador de espacio en disco, que analiza y borra de forma segura estos archivos. En sistemas Linux, comandos como <code>sudo apt clean</code> ayudan a eliminar paquetes temporales y cache que ya no son necesarios. Realizar esta limpieza de forma periódica no solo libera espacio, sino que también previene errores y cuelgues causados por archivos corruptos o conflictos de versiones.
+                                    </p>
+                                    <p>
+                                        Además, mantener el sistema libre de archivos temporales contribuye a una mayor estabilidad y rapidez, mejorando tu experiencia diaria y facilitando el mantenimiento general del equipo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Mantener actualizado el sistema operativo y controladores</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Mantener actualizado el sistema operativo y los controladores es una de las prácticas más importantes para asegurar la estabilidad, seguridad y buen rendimiento de tu ordenador. Las actualizaciones no solo corrigen vulnerabilidades que podrían ser explotadas por malware, sino que también reparan errores que afectan la funcionalidad y optimizan el uso de hardware y software.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, activar las actualizaciones automáticas en Windows o macOS garantiza que siempre tengas los últimos parches de seguridad y mejoras. En cuanto a los controladores, especialmente los de la tarjeta gráfica o dispositivos periféricos, es recomendable revisar periódicamente la página del fabricante para descargar las versiones más recientes, lo que puede mejorar la compatibilidad y el rendimiento en tareas específicas, como juegos o edición multimedia.
+                                    </p>
+                                    <p>
+                                        Al seguir esta buena práctica, previenes problemas de seguridad, reduces errores y aseguras que tu equipo funcione de forma más eficiente y estable a lo largo del tiempo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Evitar el sobrecalentamiento</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Evitar el sobrecalentamiento es fundamental para proteger la vida útil y el rendimiento de tu ordenador. Cuando los componentes internos, como el procesador o la tarjeta gráfica, alcanzan temperaturas muy altas, pueden sufrir daños permanentes o funcionar a velocidades reducidas para evitar daños, lo que se traduce en una menor eficiencia y posible pérdida de datos.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, limpiar los ventiladores y disipadores de polvo cada pocos meses ayuda a mantener un flujo de aire adecuado y reduce la acumulación de suciedad que impide la correcta disipación del calor. En el caso de los portátiles, usar bases refrigeradoras o elevar ligeramente el equipo mejora la ventilación y evita que se caliente en exceso durante sesiones largas o tareas exigentes.
+                                    </p>
+                                    <p>
+                                        Adoptar esta buena práctica no solo prolonga la vida de los componentes internos, sino que también mejora la estabilidad del sistema y previene apagados inesperados o ralentizaciones causadas por el calor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div><!--Fin del div con el contenido del primer desplegable-->
+
+                    <div class="desplegable">
+                        <span>Buenas prácticas de programación<br><p style="font-size: 14px; margin: 0; padding: 0;">Escribir código más limpio, comprensible y fácil de mantener o escalar.</p></span><span>+</span>
+                    </div>
+                    <div class="grupoBuenasPrac">
+                        
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Usar nombres de variables descriptivos</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Usar nombres de variables descriptivos es una práctica clave para escribir código limpio, comprensible y fácil de mantener. Cuando las variables tienen nombres claros que reflejan su propósito, se reduce la confusión, facilitando que tanto tú como otros desarrolladores entiendan rápidamente qué almacena cada variable sin necesidad de hacer comentarios extensos o revisar toda la lógica del programa.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, en lugar de usar un nombre genérico y poco claro como "x" para una variable, usar un nombre descriptivo como "totalFacturaConIVA" facilita identificar inmediatamente que esa variable guarda el importe total de una factura incluyendo impuestos. Esto es especialmente útil cuando se trabaja en equipo o cuando vuelves al código meses después, ya que evita malentendidos y errores por interpretación equivocada.
+                                    </p>
+                                    <p>
+                                        Esta buena práctica también ayuda a que el código sea más intuitivo, mejora la productividad y reduce el tiempo dedicado a la depuración o refactorización, favoreciendo proyectos más organizados y sostenibles a largo plazo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Comentar adecuadamente el código</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Comentar adecuadamente el código es fundamental para facilitar la comprensión y mantenimiento tanto para ti como para otros desarrolladores que puedan trabajar en el proyecto en el futuro. Los comentarios claros explican la lógica, las decisiones tomadas y el propósito de secciones específicas del código, lo que evita confusiones y acelera la resolución de errores.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, en lenguajes como JavaScript o C++, puedes usar "//" para comentarios de una sola línea y "/**/" para comentarios que abarcan varias líneas. Estos comentarios permiten añadir explicaciones, notas o advertencias sin afectar la ejecución del programa.
+                                    </p>
+                                    <p>
+                                        Esta buena práctica mejora la calidad del código, facilita la colaboración en equipo y ayuda a que, cuando vuelvas a revisar el código después de un tiempo, puedas entender rápidamente qué hace cada parte sin necesidad de analizar todo desde cero.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Modularizar el código (Dividir en funciones o clases)</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Modularizar el código consiste en dividirlo en funciones, métodos o clases con responsabilidades claras y específicas. Esta práctica es fundamental para mejorar la organización del código, facilitando su mantenimiento, depuración y futuras ampliaciones. Al separar la lógica en módulos independientes, cada parte puede ser entendida, probada y reutilizada sin afectar al resto del programa.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, en lugar de escribir todo el código dentro de una función principal como main(), puedes crear funciones específicas como calcularIVA(), validarEntrada() o procesarPago(). Así, cada función se encarga de una tarea concreta, haciendo que el código sea más legible y modular, y facilitando que otros desarrolladores trabajen simultáneamente en diferentes partes del proyecto.
+                                    </p>
+                                    <p>
+                                        Además, esta modularidad permite reutilizar componentes en distintos proyectos o partes del mismo, ahorrando tiempo y esfuerzo, y mejorando la calidad y escalabilidad del software.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Seguir un estilo de codificación coherente</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Seguir un estilo de codificación coherente es una buena práctica que mejora la legibilidad y mantenibilidad del código, especialmente cuando se trabaja en equipo. Un estilo uniforme permite que todos los desarrolladores entiendan fácilmente el código de otros, facilitando la colaboración, la revisión y la detección de errores.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, elegir una convención clara como usar camelCase para nombrar variables y funciones, espacios en lugar de tabuladores para la indentación, o colocar llaves en la misma línea o en una nueva según un estándar acordado. Además, utilizar herramientas como linters (por ejemplo, ESLint para JavaScript) o formateadores automáticos como Prettier ayuda a mantener el código limpio y consistente sin esfuerzo manual constante.
+                                    </p>
+                                    <p>
+                                        Esta práctica también reduce las discusiones innecesarias sobre estilo durante las revisiones de código, permitiendo que el equipo se centre en la lógica y calidad funcional del software.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="desplegable">
+                        <span>Organización de archivos y proyectos<br><p style="font-size: 14px; color: black; margin: 0; padding: 0;">Mantener orden y facilitar la colaboración o el trabajo futuro.</p></span><span>+</span>
+                    </div>
+                    <div class="grupoBuenasPrac">
+                        
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Organizar carpetas por tipo de archivo</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Organizar las carpetas por tipo de archivo es una práctica clave para mantener un proyecto limpio, ordenado y fácil de navegar. Al clasificar los archivos según su función o formato, no solo facilitas la localización rápida de lo que necesitas, sino que también previenes la duplicación de archivos y reduces la confusión en el equipo de trabajo.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, puedes crear carpetas principales como <code>/src</code> para el código fuente, <code>/img</code> para imágenes, <code>/docs</code> para documentación y <code>/tests</code> para pruebas. Esto permite que cualquier desarrollador que se una al proyecto pueda entender rápidamente la estructura y encontrar los recursos sin pérdida de tiempo.
+                                    </p>
+                                    <p>
+                                        Además, una estructura organizada facilita automatizar tareas como compilaciones, copias de seguridad o despliegues, mejorando la eficiencia general del desarrollo y mantenimiento del software.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Usar nombres de archivo consistentes y legibles</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Usar nombres de archivo consistentes y legibles es fundamental para evitar confusiones y facilitar la gestión de archivos, sobre todo en proyectos grandes o cuando varias personas trabajan en el mismo repositorio o sistema. Un buen sistema de nombres ayuda a identificar rápidamente el contenido, la fecha o la versión de un archivo sin necesidad de abrirlo.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, en lugar de usar nombres como <code>final2_bueno_definitivoREAL.txt</code>, que resultan poco claros y difíciles de ordenar, es mejor emplear nombres descriptivos y uniformes como <code>informe_resultados_mayo2025.pdf</code>. Esto permite organizar archivos por temas, fechas o versiones, y simplifica la búsqueda y el control de versiones.
+                                    </p>
+                                    <p>
+                                        Además, esta práctica contribuye a un entorno de trabajo más profesional y eficiente, minimizando errores por confusión de archivos y mejorando la colaboración entre compañeros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Mantener backups actualizados</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Mantener backups actualizados es una práctica crucial para garantizar la seguridad y disponibilidad de tu información frente a cualquier imprevisto, ya sea un fallo del sistema, un error humano o un ataque de malware. Los backups funcionan como una red de seguridad que te permite restaurar datos esenciales y evitar pérdidas irreparables.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, utilizar sistemas de control de versiones como Git permite guardar el historial de cambios en el código fuente, facilitando la recuperación de versiones anteriores si algo sale mal. Además, servicios en la nube como Google Drive o Dropbox ofrecen sincronización automática y almacenamiento seguro, mientras que realizar copias en discos externos proporciona un respaldo físico adicional fuera del entorno principal.
+                                    </p>
+                                    <p>
+                                        Esta buena práctica no solo protege tus datos, sino que también te aporta tranquilidad y permite una rápida recuperación ante cualquier eventualidad, minimizando tiempos de inactividad y posibles costes asociados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Documentar los proyectos con un README</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Documentar los proyectos con un archivo README es una práctica fundamental que facilita la comprensión rápida de la finalidad, requisitos y funcionamiento del proyecto tanto para ti como para cualquier colaborador o usuario que acceda al código. Un buen README actúa como la carta de presentación del proyecto, explicando su propósito, cómo instalarlo, configurarlo y utilizarlo correctamente.
+                                    </p>
+                                    <p>
+                                        Por ejemplo, un README.md bien estructurado incluye una descripción clara del proyecto, los requisitos necesarios para ejecutarlo, instrucciones paso a paso para la instalación y ejemplos prácticos de uso. Esto evita confusiones, reduce preguntas repetitivas y mejora la colaboración en equipos de trabajo, además de hacer más profesional tu repositorio.
+                                    </p>
+                                    <p>
+                                        Además, mantener una documentación actualizada contribuye a la mantenibilidad del proyecto a largo plazo y facilita futuras modificaciones o ampliaciones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!--Fin del div de los desplegables-->
+            </div><!--Fin del div del bloque de las buenas prácticas-->
+            
+            <!-- FOOTER -->
+            <div class="footer">
+                <div class="footer-cols">
+                    <!-- Columna de contacto -->
+                    <div class="footer-col">
+                        <h3><i>Puntos de informático</i></h3>
+                        <ul>
+                            <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                            <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                            <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                        </ul>
+                    </div>
+                
+                    <!-- Columna de navegación -->
+                    <div class="footer-col">
+                        <h3><i>Navegación</i></h3>
+                        <ul>
+                            <li><a href="Index.html">Inicio</a></li>
+                            <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                            <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                        </ul>
+                    </div>
+                
+                    <!-- Columna de información -->
+                    <div class="footer-col">
+                        <h3><i>Información</i></h3>
+                        <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                        <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                    </div>
+                </div>
+            
+                <!-- Línea de derechos de autor -->
+                <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                    <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                </div>
+            </div>
+
+        </div><!--Fin del div estructura-->
+    </div><!--Fin del div outer-->
+</body>
+</html>
+

@@ -1,0 +1,1120 @@
+/*CSS GENERAL*/
+body {/*Ajustamos el margen y relleno del body a 0 para que no haya espacio con el final de la pantalla*/
+    margin: 0;
+    padding: 0;
+}
+.outer {/*Div con todo el contenido de la página, incluyendo márgenes laterales*/
+    width: 100%; /*Le damos un ancho del 100% para que ocupe todo el body (ancho de pantalla)*/
+    background-color: #E0E0E0; /*Le damos un color de relleno gris de fondo*/
+}
+.estructura {/*Div centrado dentro del outer, que contiene todo el contenido de la página*/
+    background-color: #ffffff; /*Le damos un color de fondo blanco a la página*/
+    width: 90%; /*Le damos un ancho del 90% para que no ocupe todo el ancho de pantalla y se vea el relleno del div outer dejando un poco de margen a los lados*/
+    margin: 0% 5%; /*Le damos un margen del 5% a los lados para que no toque los bordes de la pantalla y permanezca centrado*/
+    text-align: center; /*Centramos el contenido horizontalmente*/
+    font-family: 'Poppins', sans-serif; /*Fuente de los textos de la página*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /*Añadimos una sombra al div estructura para darle un efecto de profundidad con respecto al div outer*/    
+}
+.titulo {/*Div que contiene el header de la página con el título y subtítulo*/
+    background-color: #1C1C1E  ; /*Le damos un color de fondo al título*/
+    width: 90%; /*Le damos un ancho del 100% para que ocupe todo el ancho del div estructura*/
+    color: #ffffff; /*Le damos un color de texto blanco al título*/
+    padding: 20px 5%; /*Le damos un relleno de 20px arriba y abajo y 5% a los lados*/
+    margin-bottom: 0px; /*Le quitamos el margen abajo para que no haya espacio entre el título y el menú*/
+    border-radius: 0px 0px 10px 10px; /*Le damos un border-radius de 10px para suavizar el diseño*/
+}
+.titulo h1{/*Tamaño y margen para el título*/
+    font-size: 38px; 
+    margin-bottom: 0;
+}
+.titulo p {/*Tamaño de texto para el subtítulo*/
+    font-size: 18px;
+}
+
+
+/*Botones*/
+/*Estilos para los botones de más información*/
+.seccion a, .contenedorLinea a, .contenedor-habilidades a, .pagInt1 a, .pagInt2 a, .pagInt3 a, .botones .flechas {
+    display: inline-block; /*Hace que funcione correctamente la transición*/
+    text-decoration: none; /*Le quitamos el diseño al enlace del botón*/
+    color: #000000; /*Le damos color de texto al botón*/
+    padding: 10px 30px; /*Le damos padding al enlace para agrandar el botón*/
+    border-radius: 20px; /*Le quitamos las esquinas*/
+    background-color: rgb(249, 168, 37, 0.7); /*Le damos color al botón (Añadimos el color amarillo de marca pero con 0.7 de opacidad)*/
+    transition: background-color 0.3s, transform 0.3s ease; /*Transición suave para el hover del botón*/
+    font-weight: 700; /*Texto del botón en negrita*/
+    border: none; /*Eliminamos los bordes por defecto de los elementos button*/
+}
+.seccion a:hover, .contenedorLinea a:hover, .contenedor-habilidades a:hover, .pagInt1 a:hover, .pagInt2 a:hover, .pagInt3 a:hover, .botones .flechas:hover {
+    background-color:   #F9A825; /*Color más oscuro al pasar el ratón*/
+    transform: scale(1.1); /*Aumento en el tamaño del botón*/
+}
+.boton {
+    padding: 20px 0; /*Le damos un poco de relleno al div que contiene al botón para dar margen con el texto*/
+}
+
+
+/*MENÚ DESPLEGABLE*/
+.menu {/*div con todo el contenido del menú*/
+    background-color: #F9A825; /*Le damos un color de fondo al menú*/
+    width: 99%; /*No le damos un ancho del 100% para que no llegue hasta el div estructura y aparezca integrado en el div título*/
+    margin: 0% 0.5%; /*Le damos un margen del 0.5% a los lados para que no toque los bordes del div estructura y permanezca centrado*/
+    border-radius: 0px 0px 10px 10px;/*Le damos un radio de esquinas de 20px para suavizar el diseño*/
+    height: auto; /*Gracias a este height auto junto con el padding de los li de la listamenu, hacemos que el menú aparezca centrado verticalmente en el div*/
+}
+.listamenu {/*Lista que contiene el menú*/
+    display: flex; /*Alineamos los elementos del menú en fila*/
+    justify-content: center; /*Centramos los elementos del menú horizontalmente*/
+    list-style: none; /*Eliminamos los puntos de la lista*/
+    gap: 20px; /*Añadimos un margen de 20px entre los elementos del menú*/
+    margin: 0px; /*Quitamos el margen de la lista que tiene predeterminado, para que se queden pegados el final del div titulo con el principio del div menu*/
+}
+.listamenu li { /*Elementos del menú*/
+    padding: 15px; /*Añadimos padding para que haya un poco de relleno entre todos los elementos li*/
+    position: relative; /*Necesario para que el submenú se posicione correctamente */
+}
+.listamenu li a {/*Enlaces de los elementos del menú*/
+    text-decoration: none; /*Eliminamos el subrayado de los enlaces*/
+    color: #000000; /*Cambiamos el color del texto a blanco*/
+    font-weight: 600;
+    padding: 15px; /*con este padding hacemos que de igual donde hagamos click con el cursor, cogerá el enlace siempre que este dentro del li.*/
+}
+.listamenu li:hover {
+    background-color: #C17900; /*Cambiamos el color de fondo de los elementos del menú al pasar el cursor por encima*/
+    border-radius: 5px; /*Le damos un radio de esquinas de 5px para suavizar el diseño al pasar el cursor por encima del enlace*/
+}
+.listamenu li ul {/*Listas de los submenús*/
+    display: none; /*Ocultamos la lista del submenú para que no aparezca todo el tiempo*/
+    position:absolute; /*Necesario para que al aparecer el submenú no haga cambios en el resto del menú*/
+    top: 100%; /*Aparece justo debajo del li*/
+    background-color: #F9A825; /*Le damos el mismo color que el menú principal*/
+    border-radius: 5px; /*Le damos un radio de esquinas de 5px para suavizar el diseño*/
+    left: 0;/*Hace que aparezca alineado con el li superior*/
+    list-style: none; /*Eliminamos los puntos de la lista*/
+    width: max-content; /*Ajusta el ancho del submenú al contenido*/
+    padding: 0px;/*Quitamos el margen y el relleno predeterminado de la lista para que se ajuste completamente*/
+    margin: 0px;
+}
+.listamenu li:hover > ul {
+    display: block; /*Mostramos el submenú cuando pasemos por encima del li correspondiente al submenú*/
+    z-index: 1; /*Le añadimos el z-index para que el submenú aparezca por encima del slider de imágenes*/
+}
+
+
+/*FOOTER*/
+.footer {/*Div con todo el contenido del footer*/
+    background-color: #1C1C1E; /*Le damos un color de fondo al footer*/
+    border-radius: 10px 10px 0px 0px; /*Le damos un radio de esquinas de 20px para suavizar el diseño*/
+    width: 90%; /*Le damos un ancho del 90% para que ocupe todo el ancho del div estructura*/
+    padding: 0% 5%;/*Le damos un poco de relleno a los lados para que llegue hasta el final del div estructura*/
+    color: #ffffff; /*Le damos un color de texto blanco al footer*/
+}
+.footer-cols {/*Div con las columnas del footer sin contar con la línea de copyright*/
+    width: 100%; /*Le damos un ancho del 100% para que ocupe todo el ancho del div footer*/
+    display: flex; /*Alineamos los elementos en fila*/
+    justify-content: space-between; /*Alineamos los elementos a los lados*/
+}
+.footer-col {/*Columnas del footer por separado*/
+    width: 30%; /*Le damos un ancho del 30% para que haya espacio entre las columnas*/
+    padding: 1.5%; /*Le damos un relleno del 1.5% para que haya espacio entre los bordes de las columnas y el texto*/
+}
+.footer-col ul {/*Listas que hay dentro de las columnas para mostrar el texto*/
+    list-style: none; /*Eliminamos los puntos de la lista*/
+    padding: 0px; /*Quitamos el relleno de la lista*/
+}
+.footer-col ul li {
+    margin: 5px; /*Damos un poco de margen entre los enlaces*/
+}
+.footer-col a {/*Enlaces que haya dentro de las columnas*/
+    text-decoration: none; /*Eliminamos el subrayado de los enlaces*/
+    color: #ffffff; /*Cambiamos el color del texto a blanco*/
+    font-size: large; /*Cambiamos el tamaño del texto a grande*/
+}
+.footer-col a:hover {/*Cambiamos el color del texto solo a los enlaces para que sea más sencillo visualmente para el usuario*/
+    color: #F9A825; /*Cambiamos el color del texto a al pasar el cursor por encima*/
+    cursor: pointer; /*Cambiamos el cursor para que se vea que se puede clicar en él*/
+}
+
+
+/*DESCRIPCIÓN / HOME / PagInterés / BuenasPracticas / SeguridadInformática / TemasImportantes / HerramientasUtiles / BiografiaInformatica / Contacto*/
+.descripcion {/*Div que contiene todo el bloque de la descripción*/
+    background-color: #1C1C1E; /*Color oscuro de fondo*/
+    width: 90%; /*Ancho del 90% para que no ocupe todo el ancho de pantalla*/
+    margin: 0% 5%; /*Un poco de margen a cada lado para mantenerlo centrado*/
+    box-sizing: border-box; /*Ajustamos el relleno dentro del ancho disponible*/
+    padding: 60px; /*Añadimos un poco de padding al bloque*/
+    border-radius: 20px; /*Redondeamos las esquinas para suavizar el diseño*/
+    text-align: left; /*Alineamos el texto a la izquierda*/
+    line-height: 1.5; /*Agrandamos ligeramente el interlienado*/
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /*Pequeña sombra para resaltar el bloque*/
+
+}
+.descripcion h1 {/*Título del bloque*/
+    margin-bottom: 20px; /*Pequeño margen para separar el título de la descripción*/
+    color: #F9A825; /*Color amarillo para destacar el título*/
+    font-size: 2em; /*Agrandamos el tamaño de fuente*/
+    font-weight: 700; /*Ponemos el texto en negrita*/
+    text-align: center; /*Alineamos el título en el centro del bloque*/
+    margin-top: 0; /*Eliminamos el margen superior al tener relleno ya añadido el bloque*/
+}
+.descripcion-texto {/*Texto de la descripción*/
+    color: #ffffff; /*Color blanco al texto*/
+    text-align: justify; /*Justificamos el texto*/
+    font-size: 1.05em; /*Tamaño de fuente*/
+    margin: 0; /*Eliminamos el margen predeterminado*/
+}
+.descripcion-coltexto {/*Div con la columna de texto en las descripciones*/
+      width: 70%; /*Dejamos un width del 70% para dejar espacio para la imagen*/
+      padding-top: 20px; /*Le damos un poco de espacio con el título*/
+}
+.descripcion-colimg img {/*A la imagen le damos un ancho del 100% dentro del bloque en el que está*/
+      width: 100%; /*Le damos un ancho del 100% a la imagen dentro del bloque*/
+      height: auto; /*Altura auto para que no se deforme la imagen*/
+      border-radius: 15px; /*Le damos un border radius para suavizar el diseño*/
+}
+.descripcion-colimg { /*Div que contiene la columna de la imagen de la descripción*/
+      width: 25%; /*No llegamos hasta el 30% restante del espacio para dejar un poco de margen con el texto*/
+      height: auto;
+      margin-left: 3%; /*Le damos un poco de margen con la columna del texto*/
+      
+}
+.descripcion-cols {/*Div para las descripciones que tengan columnas*/
+    width: 100%; /*Le damos un ancho del 100% para que ocupe todo el ancho de pantalla*/
+    height: auto; /*Ajustamos la altura al contenido*/
+    display: flex; /*Posicionamos los bloques a lo largo de todo el espacio del bloque*/
+    justify-content: center;/*Alineamos el contenido horizontal y verticalmente*/
+    align-items: center; 
+}
+/*FIN DE CSS GENERAL*/
+
+
+/*SLIDER / HOME*/
+.cuerda {/*Div que simula la cuerda donde se desplazan las imágenes*/
+    background-color: #1C1C1E; /*Damos un color de fondo*/
+    height: 40px;/*No le damos mucha altura para que el div aparente ser una cuerda por la que se desplazan las imágenes*/
+    width: 100%;/*Le damos un width del 100% que ocupará el ancho del div estructura*/
+    border-radius: 5px;/*para suavizar el diseño pero no demasiado*/
+    margin-top: 20px;/*Dejamos un poco de margen con el menú*/
+}
+#slidertodo {/*Div que contiene todo el contenido y lo ajustamos al div estructura*/
+    margin-top: -50px; /*Le damos un margen negativo para que el div slidertodo se superponga al div cuerda y aparente que las imágenes se desplazan por encima de la cuerda*/
+    width: 100%; /*Le damos un ancho del 100% que ocupará todo el ancho del div estructura*/
+    height: 450px; /*Una altura para que las imágenes no sobresalgan de esa altura*/
+    border-radius: 5px; /*Le damos border-radius para que las imágenes salgan y entren con más suavidad del div*/
+    overflow: hidden; /*Asegura que las imágenes no se salgan del contenedor*/
+    position: relative; /*Posición relativa para que las imágenes se puedan posicionar correctamente*/
+}
+#slider {/*Div que contiene las imágenes*/
+    display: flex; /*Las imágenes se colocan en línea*/
+    position: absolute; /*Posición absoluta para que las imágenes se coloquen una al lado de la otra*/
+    width: auto; /*El ancho se ajusta automáticamente a las imágenes*/
+    height: 100%; /*La altura se ajusta a la altura de 450 px del div slidertodo*/
+    animation: slider 60s linear infinite; /*Animación continua y linear*/
+}
+#slider img {/*Imáenes del slider por separado*/
+    width: 630px; /*Tamaño fijo de las imágenes*/
+    height: 350px; /*Tamaño fijo de las imágenes*/
+    border-radius: 15px; /*border-radius a las imágnes para que tengan más suavidad dentro de la página*/
+    margin: 30px; /*Espacio entre las imágenes*/
+    box-sizing: border-box; /*incluye el margen y relleno dentro del ancho establecido*/
+    
+}
+@keyframes slider {/*Keyframes para el bloque que contiene a las imágenes, no a cada imagen*/
+    0% {
+        transform: translateX(0); /*Empieza desde la posición inicial*/
+    }
+    100% {
+        transform: translateX(-6210px); /*Se desplaza hacia la izquierda, ya que cada imagen tiene un ancho de 570px + 30px a cada lado me da un total de 630px que
+        * 10 imágenes es 6300px*/
+    }
+}
+
+
+/*SECCIONES DESTACADAS / HOME*/
+.destacados {/*Div con todo el bloque de las secciones destacadas*/
+    width: 90%; /*Width del 90% que con padding hacemos que ocupe el 100% del ancho dejando margen*/
+    padding: 5%;
+}
+.secciones {/*Div con las secciones y los botones del bloque, sin el título del bloque*/
+    width: 100%; /*Ahora si damos un ancho del 100% para que ocupe todo el bloque de destacados*/
+    position: relative; /*Le damos position: relative para que posteriormente podamos colocar las secciones con posición absoluta*/
+}
+.seccion {/*Las 3 secciones destacadas por separado*/
+    position: absolute; /*Al añadir posición absoluta todas las secciones están en la misma posición*/
+    top: 0; /*Lo colocamos en la esquina superior izquierda del div secciones para que ocupe el 100% del ancho del bloque*/
+    left: 0;
+    display: flex; /*Le damos display flex para posicionar las columnas de las secciones*/
+    box-sizing: border-box; /*Le añadimos border-box para que a pesar del margen y relleno no sobresalga del límite del bloque*/
+    background-color: #E0E0E0; /*Añadimos color de fondo para darle estilo al bloque*/
+    padding: 25px; /*un poco de margen entre el contenido y el borde*/
+    border-radius: 25px; /*Le añadimos border radius para suavizar el diseño*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /*Le damos una pequeña sombra para sobresaltar el bloque con el fondo*/
+    opacity: 0; /*ocultamos los bloques para posteriormente solo mostrar uno de ellos*/
+    pointer-events: none; /*Le quitamos la posibilidad de pulsar el botón del bloque cuando no se está mostrando*/
+    transition: opacity 2.5s ease; /*Transición suave en la opacidad a la hora de mostrarse*/
+}
+.columna-texto {/*Columnas de descripción de las secciones*/
+    width: 50%; /*50% de ancho a cada columna dentro del bloque*/
+    margin-right: 25px; /*de damos margen con la imagen de la otra columna*/
+}
+.columna-texto p {/*Párrafos dentro de la columna sin tener en cuenta ni título ni botón*/
+    text-align: justify; /*Justificamos el texto*/
+    line-height: 1.6; /*Aumentamos el interlineado*/
+}
+.columna-img {/*Columnas de imagen de las secciones*/
+    width: 50%; /*50% de ancho a cada columna*/
+    margin-left: 25px; /*Le damos margen con la columna de texto*/
+}
+.columna-img img {/*Imágenes dentro de la columna de las secciones*/
+    width: 100%; /*Le damos a todas las imágenes el mismo formato, con un ancho del 100% dentro de la columna*/
+    height: 350px; /*Le ajustamos la altura para que las imágenes todas tengan el mismo tamaño*/
+    border-radius: 15px; /*Le damos border-radius para suavizar el diseño*/
+}
+#seccion1 {/*Únicamente la primera sección de las 3*/
+    position: relative; /*Le damos solo a la primera sección position relative porque si no, no detectaría que hay un bloque y el div entero de las secciones 
+    disminuiría de tamaño descolocando los demás bloques de la web*/
+    opacity: 1; /*Mostramos únicamente el primer bloque*/
+    pointer-events: all; /*Le damos la posibilidad de usar el botón de la sección cuando se está mostrando*/
+}
+.botones {/*Div con las flechas y los puntos para cambiar de bloque*/
+    width: 100%; /*Le damos un ancho del 100% para que ocupe todo el bloque de secciones*/
+    margin-top: 20px; /*Le damos un poco de margen con los bloques de las secciones*/
+    display: flex; /*Display flex para posicionarlos*/
+    justify-content: space-between; /*Hacemos que aparezcan los botones a los laterales con los puntos en el centro*/
+}
+#puntos {/*Puntos que muestran en la sección en la que nos encontramos*/
+    display: flex; /*Posicionamos los puntos en linea*/
+    justify-content: space-between; /*Damos el mismo margen a los 3 puntos*/
+    align-items: center; /*Centramos los puntos dentro del div que los contiene*/
+}
+#punto1, #punto2, #punto3 {/*Puntos por separado*/
+    font-size: 22px; /*Asegura que todos los puntos tengan el mismo tamaño*/
+    margin: 0px 5px; /*Separamos un poco los puntos entre ellos*/
+    color: #E0E0E0; /*Les damos un color grisaceo*/
+}
+#punto1 {/*Únicamente el punto 1*/
+    font-size: 32px; /*Al punto que corresponde la primera sección lo sobresaltamos*/
+    color: #1C1C1E; /*Y lo destacamos*/
+}
+
+
+/*ESTADÍSTICAS / HOME*/
+.estadisticas {/*Div que contiene todo el bloque de las estadísticas*/
+    background-color: #ffffff; /*Color de fondo acorde a la página*/
+    text-align: center; /*Alineamos el texto del título y las estadísticas*/
+    width: 90%; /*Le damos un ancho del 90% para dejar un poco de margen lateral*/
+    padding: 0%  5%; /*Añadimos el margen lateral y centramos el contenido*/
+    margin: 0 auto; /*Eliminamos el margen del bloque*/
+}
+.contenedor {/*Div que contiene todas las estadísticas*/
+    display: flex; /*Posicionamos las estadísticas en fila*/
+    flex-wrap: wrap; /*Permitimos que se pongan una encima de otra si el ancho no permite que estén todas en una línea*/
+    justify-content: center; /*Centramos las tarjetas horizontalmente en caso de que el ancho sea muy grande*/
+    gap: 30px; /*Añadimos un margen entre las tarjetas de las estadísticas*/
+}
+.estadistica {/*Divs que contienen las estadísticas por separado*/
+    flex: 1 1 200px; /*Hacemos que el ancho de las tarjetas se ajuste automáticamente con un mínimo de 200px*/
+    padding: 20px; /*Añadimos padding a las tarjetas*/
+}
+.estadistica-box {/*Div para dar efecto de tarjetas a las estadísticas*/
+    background-color: #1C1C1E; /*Añadimos un color de fondo*/
+    padding: 30px 20px; /*Padding para el bloque y dejar margen dentro de las tarjetas*/
+    border-radius: 20px; /*Redondeamos las esquinas para suavizar el diseño*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /*Añadimos una pequeña sombra para resaltarlas*/
+    transition: transform 0.3s ease; /*Pequeña transición para el hover*/
+}
+.estadistica-box:hover {
+    transform: translateY(-10px); /*Las desplazamos ligeramente hacia arriba*/
+}
+.icono {/*Span para los iconos de las tarjetas*/
+    font-size: 40px; /*Tamaño para los iconos*/
+    margin-bottom: 10px; /*Margen con el número*/
+}
+h2.contador {/*Número de la estadística*/
+    font-size: 48px; /*Añadimos el tamaño de fuente para el número*/
+    color: #F9A825; /*Color amarillo para el número*/
+    margin: 10px 0; /*Ligero margen arriba y abajo*/
+    font-weight: 600; /*Añadimos el número en negrita*/
+}
+.nEstadistica {/*Párrafo con el nombre de la estadística*/
+    font-size: 22px; /*Tamaño de fuente más pequeño que el número*/
+    color: #ffffff; /*Color blanco para que se lea con el fondo oscuro*/
+    font-weight: 500; /*Añadimos un poco de seminegrita al texto*/
+}
+
+
+/*HABILIDADES / HOME*/
+.contenedorHabilidades {/*Div que contiene el bloque entero de las habilidades*/
+    display: flex; /*Organizamos el contenido en una columna*/
+    flex-direction: column;
+    align-items: center; /*Centramos el contenido horizontalmente*/
+    gap: 30px; /*Espacio entre el título y el contenido*/
+    width: 90%; /*Ancho del 90% junto al padding para asegurar margen y centrado*/
+    padding: 70px 5%;
+    background-color: #1c1c1e; /*Fondo oscuro para el bloque*/
+    border-radius: 20px; /*Esquinas redondeadas para suavizar el diseño*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /*Sombra suave para resaltar el bloque*/
+    margin-top: 50px; /*Margen respecto al bloque de las estadísticas*/
+}
+.contenedorHabilidades h1 {/*Título del bloque*/
+    color: #ffffff; /*Color blanco para el texto*/
+    text-align: center; /*Centramos el título*/
+    margin-top: 0; /*Elimina margen superior*/
+}
+.bloqueHabilidades {/*Div que contiene todas las habilidades y las flechas*/
+    width: 100%; /*Le damos el 100% del ancho disponible*/
+    display: flex; /*Alineamos el contenido en una línea*/
+    justify-content: center; /*Centrado horizontal del contenido*/
+    align-items: center; /*Centrado vertical*/
+}
+.divOverflow { /*Div para que las habilidades al cambiar no pasen por encima de las flechas*/
+    overflow: hidden; /*Oculta contenido fuera del bloque*/
+    border-radius: 20px; /*Redondeamos las esquinas para suavizar el diseño*/
+    margin: 0 10px; /*Separación entre las flechas y las habilidades*/
+    flex: 1; /*Ocupa todo el espacio disponible*/
+}
+.habilidades {/*Div con todos los grupos de las habilidades*/
+    display: flex; /*Alineamos en fila de los grupos de habilidades*/
+    transition: transform 0.5s ease-in-out; /*Transición para el desplazamiento*/
+}
+.grupoHabilidades {/*Divs con cada grupo de habilidades*/
+    display: flex; /*Habilidades en fila dentro del grupo*/
+    justify-content: space-around; /*Separamos las habilidades dentro del grupo*/
+    flex: 0 0 100%; /*Cada grupo ocupa el 100% del contenedor visible*/
+    gap: 20px; /*Espacio entre habilidades*/
+    max-width: 100%; /*Evita que se salga del contenedor*/
+    padding: 10px 0; /*Espacio con el título*/
+}
+.habilidad {/*Divs con las habilidades por separado*/
+    flex: 1 1 calc(25% - 40px); /*Calculamos el margen para que todas las habilidades tengan el mismo tamaño*/
+    padding: 20px; /*Relleno para la habilidad*/
+    margin: 0 10px; /*Margen entre habilidades*/
+    background-color: #e0e0e0; /*Fondo gris claro*/
+    border-radius: 16px; /*Esquinas redondeadas para suavizar el diseño*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /*Sombra suave para resaltar las habilidades*/
+    font-size: 1.1em; /*Tamaño de texto*/
+    font-weight: 600; /*Texto en semi-negrita*/
+    color: #1c1c1e; /*Texto oscuro*/
+    transition: transform 0.3s ease, background-color 0.3s ease; /*Transición para el hover*/
+}
+.habilidad:hover {
+    background-color: #F9A825; /*Color amarillo al pasar el ratón*/
+    transform: scale(1.05); /*Ligeramente más grande al hacer hover*/
+}
+#btn-dcha,
+#btn-izq {/*Botones de las flechas para cambiar de gurpo de habilidades*/
+    background-color: #F9A825; /*Color amarillo*/
+    color: #1c1c1e; /*Flechas oscuras*/
+    font-size: 24px; /*Tamaño de las flechas*/
+    padding: 12px 20px; /*Relleno del botón*/
+    border-radius: 20px; /*Esquinas redondeadas para suavizar el diseño*/
+    border: none; /*Eliminamos el borde por defecto*/
+    cursor: pointer; /*Cambia a cursor de clic*/
+    font-weight: bold; /*Texto en negrita*/
+    transition: background-color 0.3s, transform 0.3s ease; /*Transición para el hover*/
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /*Sombra suave para resaltar el botón*/
+}
+#btn-dcha:hover,
+#btn-izq:hover {
+    background-color: #e0e0e0; /*Cambia a gris claro al hacer hover*/
+    transform: scale(1.1); /*Aumentamos de tamaño ligeramente*/
+}
+
+
+/*PÁGINAS INTERÉS / PagInterés*/
+.pagInteres { /*Div que contiene todo el bloque de las páginas de interés*/
+    width: 90%; /*Le damos un ancho del 90%*/
+    padding: 0 5%; /*Damos el 10% restante con un 5% de margen a cada lado*/
+    display: flex; /*Damos display flex para poder trabajar mejor con los bloques*/
+    flex-direction: column; /*colocamos los elementos en columna*/
+    justify-content: center; /*Centramos el contenido horizontalmente*/
+    align-items: center; /*Centramos el contenido verticalmente*/
+}
+.grupos {/*Div que contiene los botones para cambiar de grupo de páginas*/
+    position: relative; /*Añadimos position relative para que sea más sencillo posicionar el bloque activo*/
+    display: flex; /*Alineamos los 3 botones en una fila*/
+    background-color: #e0e0e0; /*Gris para el fondo de div*/
+    border: 1px solid #1c1c1e; /*Resaltamos el bloque con un borde*/
+    border-radius: 50px; /*Redondeamos las esquinas para suavizar el diseño*/
+    padding: 4px; /*se incrementa ligeramente el padding */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /*Ligera sombra para destacar el bloque*/
+}
+.grupo {/*Divs con los botones de los grupos*/
+    width: 100px; /*Damos a los 3 botones el mismo tamaño*/
+    padding: 10px 20px; /*Un poco de relleno para que sea más sencillo hacer clic en él*/
+    border-radius: 50px; /*Redondeamos las esquinas para suavizar el diseño*/
+    cursor: pointer; /*Cambiamos el cursor cuando nos posicionamos encima del botón*/
+    z-index: 1; /*Posicionamos los grupos por encima del grupo activo que le dará el fondo al grupo seleccionado*/
+    color: #1c1c1e; /*Color oscuro parael texto*/
+}
+.activo {/*Div que desplazaremos detrás del grupo activo para destacarlo*/
+    background-color: #F9A825;/*Color amarillo de fondo*/
+    position: absolute; /*Posición absoluta dentro del position relative de .grupos que nos permite moverlo dentro de ese div sin que se rompa su posición*/
+    transition: left 0.5s ease-in-out; /*Ligera transición para desplazarlo*/
+    width: 150px; /*Le damos el mismo ancho que ocupa cada botón con su padding*/
+    height: 85%; /*Le ajustamos la altura para que cuadre dentro de los bordes de .grupos*/
+    left: 5px; /*Lo desplazamos 5px a la derecha y 4 hacia abajo que son los px que tiene de padding el bloque*/
+    top: 4px;
+    border-radius: 50px; /*Redondeamos las esquinas para suavizar el diseño*/
+    z-index: 0; /*Aseguramos que quede por debajo de los botones*/
+}
+.bloquesGrupos {/*Div que contiene los 3 grupos de páginas*/
+    position: relative; /*Le damos position relative para poder posicionar después los grupos*/
+    width: 100%; /*Le damos un ancho del 100%*/
+    overflow: hidden; /*No dejamos que se vea nada fuera del bloque ya que después irán apareciendo las páginas poco a poco*/
+}
+.bloquesGrupos > div {/*Divs con cada grupo de páginas*/
+    position: absolute; /*Position absolute para poder posicionar los grupos uno encima de otro*/
+    top: 0; /*Los ajustamos a la esquina superior izquierda*/
+    left: 0;
+    width: 100%; /*Le damos el mismo ancho que al bloque entero*/
+    transition: opacity 0.5s ease-in-out; /*Ligera transición para cuando se cambie a otro grupo*/
+    display: flex; /*Posicionamos todos los elementos en una columna*/
+    flex-direction: column;
+    align-items: center;
+    padding: 0px; /*Eliminamos los padding para que se ajuste a todo el ancho disponible*/
+}
+.descripcionPagInt {/*Descripción de los grupos de páginas*/
+    padding: 0px; /*Eliminamos el relleno por defecto de los párrafos*/
+    margin-bottom: 30px; /*Damos un poco de margen con el inicio de las páginas*/
+    color: #000000; /*color para el texto de la descripción*/
+    max-width: 1250px; /*Le damos un ancho máximo para que la descripción no ocupe demasiado*/
+    text-align: center; /*Alineamos el texto*/
+}
+.bloquesGrupos div h1 {/*Título de los grupos de páginas*/
+    padding: 0px;/*Eliminamos el relleno del título*/
+    color: #1c1c1e;/* línea modificada: color gris antracita */
+    margin-bottom: 10px; /*Pequeño margen con el párrafo de descripción*/
+    font-size: 1.6em;/*Tamaño de fuente*/
+}
+.columnasInteres {/*Div que contiene las páginas sin el título y la descripción*/
+    background-color: white;/*Le damos color de fondo al bloque*/
+    display: flex; /*Colocamos todas las páginas en una columna*/
+    flex-direction: column;
+    text-align: left; /*Alineamos el texto a la izquierda*/
+    gap: 20px; /*Separación entre páginas*/
+    padding: 10px 20px; /*Relleno para el bloque*/
+}
+.pagInt1, .pagInt2, .pagInt3 {/*Divs que contienen las páginas por separado*/
+    justify-content: space-between; /*Separamos la imagen del logo del texto y el botón*/
+    display: flex;
+    align-items: center; /*Centramos verticalmente*/
+    gap: 20px; /*Separación entre columnas */
+    padding: 20px; /*Relleno para el bloque*/
+    background-color: #f9f9f9; /*Color claro de fondo*/
+    border: 1px solid #ddd;/*Borde Ligeramente más oscuro que el fondo*/
+    border-radius: 12px; /*Redondeamos las esquinas para suavizar el diseño*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);/*Sombra ligera*/
+    opacity: 0; /*Ocultamos todas las páginas para ir mostrándolas a medida que se hace scroll*/
+    transition: transform 2s ease, opacity 0.8s ease; /*Ligera transición para el desplazamiento*/
+}
+.pagInt1.visible, .pagInt2.visible, .pagInt3.visible {/*Mostramos las páginas al agregarles la clase .visible*/
+    opacity: 1;
+    transform: translateX(0) !important; /*Lo devolvemos a la posición inicial*/
+}
+.pagInt1.from-left, .pagInt2.from-left, .pagInt3.from-left {/*Posicionamos las páginas que aparecen desde la izquierda*/
+    transform: translateX(-800px);
+}
+.pagInt1.from-right, .pagInt2.from-right, .pagInt3.from-right {/*Posicionamos las páginas que aparecen desde la derecha*/
+    transform: translateX(800px);
+}
+.columnaIntTexto {/*Div con las columnas del título, descripción y botón de las páginas*/
+    padding: 20px;
+    width: 50%; 
+    overflow: hidden;
+}
+.columnaIntTexto h2 {
+    font-size: 1.5em;/*Tamaño de fuente*/
+    color: #1c1c1e;/*Color oscuro*/
+    margin-bottom: 10px;/* línea añadida: separación con el texto */
+}
+.columnaIntTexto p {
+    font-size: 1rem;/* línea añadida: tamaño de texto base */
+    color: #333;/*Texto más claro que el título*/
+    margin-bottom: 15px;/*Separación con el botón */
+}
+.columnaIntTexto, .columnaIntImg {/*Le damos un ancho del 50% a ambas columnas además de evitar que se visualice nada fuera de ellas*/
+    width: 50%; 
+    overflow: hidden;
+}
+.columnaIntImg img {/*Ajustamos el ancho y el alto de las imágenes*/
+    width: 100%;
+    height: auto;
+    border-radius: 8px;/* línea añadida: suaviza las esquinas de las imágenes */
+}
+
+
+/*DESPLEGABLES / BuenasPracticas / SeguridadInformatica / TemasImportantes*/
+.buenasPracticas {/*Div que contiene todo el bloque de los desplegables*/
+    width: 90%;/*Le damos un ancho del 95% con respecto al div estructura*/
+    text-align: center;/*Centramos el texto*/
+    padding: 0 5%;/*Añadimos un pequeño relleno a los lados*/
+}
+.buenasPracticas h2 {/*Título que solo aparece en la página de Buenas Prácticas*/
+    margin-top: 40px;/*Margen con el bloque de la descripción*/
+    font-size: 32px;/*Tamaño de fuente*/
+    color: #1C1C1E;/*Color de texto para el título*/
+    font-weight: 700;/*Texto en negrita*/
+}
+.bloqueBuenasPracticas {/*Bloque que contiene únicamente a los desplegables*/
+    width: 100%;/*Le damos un ancho del 100% disponible*/
+    display: flex;/*Display flex para posicionar el contenido más fácilmente*/
+    flex-direction: column;/*Posicionamos el contenido en una columna*/
+    align-items: center;/*Centramos horizontalmente el contenido*/
+    gap: 10px; /*Espacio entre desplegable*/
+}
+.desplegable {/*Div que contiene el TÍTULO de los primeros desplegables*/
+    width: 100%;/*Ajustamos el ancho al 100%*/
+    max-width: 1200px;/*Le damos una anchura máxima para que no sea demasiado ancho en ordenador*/
+    border: solid 2px #1C1C1E;/*Bordeamos el bloque para destacarlo*/
+    border-radius: 12px;/*Redondeamos las esquinas para suavizar el diseño*/
+    background-color: #e0e0e0;/* línea modificada: fondo gris antracita */
+    display: flex;/*Display flex para posicionar mejor el contenido*/
+    justify-content: space-between;/*Separamos el título del (+/-) a lo ancho del div*/
+    align-items: center;/*Centramos horizontalmente el contenido*/
+    margin: 0;/*Quitamos todo el margen posible*/
+    padding: 20px 30px;/*Un poco de relleno al bloque*/
+    box-sizing: border-box;/*Ajustamos el relleno dentro del ancho y alto disponibles*/
+    cursor: pointer;/*Cambiamos el cursor cuando se posiciona encima del div*/
+    transition: background-color 0.3s ease;/*Pequeña transición para el color de fondo*/
+    text-align: left;/*Alineamos el texto a la izquierda para el título*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /*Sombra suave*/
+}
+.desplegable span {/*Span que contiene el título del desplegable*/
+    font-size: 24px;/*Ajustamos el tamaño del título*/
+    color: #1C1C1E;/*Color de texto*/
+    font-weight: 600;/*Texto en negrita*/
+}
+.desplegable:hover {/*Cambiamos el color de fondo cuando nos posicionamos encima del div*/
+    background-color: #1C1C1E; 
+}
+.desplegable:hover span{/*Cambiamos también el color del título y texto para que sea legible*/
+    color: #F9A825;
+}
+.desplegable:hover p{
+    color: #e0e0e0;
+}
+.grupoBuenasPrac {/*Div que contiene el CONTENIDO del primer desplegable*/
+    width: 100%;/*Ajustamos el ancho al 100%*/
+    max-width: 1200px;/*Le damos una anchura máxima para que no sea demasiado ancho en ordendador*/
+    overflow: hidden;/*No permitimos que se visualice el contenido fuera del div*/
+    height: 0;/*Ajustamos la altura a 0 inicialmente, estará oculto*/
+    transition: height 1s ease;/*Transición para la altura*/
+    display: flex;/*Display flex para posicionar mejor el contenido*/
+    flex-direction: column;/*Posicionamos el contenido en una columna*/
+    align-items: center;/*Alinemos horizontalmente el contenido*/
+    margin-bottom: 10px;/*Añadimos un poco de margen con el siguiente desplegable*/
+}
+.desplegable2 {/*Div con el TÍTULO de los segundos desplegables*/
+    width: 98%;/*Ajustamos el ancho al 98% para que sea ligeramente menos ancho que el primer desplegable*/
+    max-width: 1180px;/*Lo mismo para el ancho máximo*/
+    border-radius: 10px;/*Redondeamos las esquinas para suavizar el diseño*/
+    background-color: #1C1C1E;/*Fondo oscuro*/
+    display: flex;/*Display flex para posicionar mejor el contenido*/
+    justify-content: space-between;/*Separamos a los lados el título del (+/-)*/
+    margin: 5px 0px;/*Ligero margen entre desplegables*/
+    padding: 15px 30px;/*Le damos un poco de relleno aunque menor que el del primer desplegable*/
+    box-sizing: border-box;/*Ajustamos el relleno dentro del ancho y alto disponibles*/
+    cursor: pointer;/*Cambiamos el cursor cuando nos posicionamos encima del div*/
+    transition: background-color 0.3s ease;/*Transición para el color de fondo*/
+}
+.desplegable2:hover span{/*Cambiamos el color de los textos al posicionarnos encima del div*/
+    color: #F9A825; 
+}
+.desplegable2 span {/*Al igual que en los primeros desplegables, el título y el (+/-) dentro de span*/
+    font-size: 18px;/*Texto un poco más pequeño que el del primer desplegable*/
+    color: #e0e0e0;/*Color de texto claro*/
+    font-weight: 600;/*Texto en negrita*/
+}
+.buenaPrac {/*Div con el contenido de los segundos desplegables1*/
+    overflow: hidden;/*Ocultamos todo fuera del espacio visible del div*/
+    height: 0;/*Ajustamos la altura a 0 inicialmente*/
+    transition: height 1s ease;/*Transición para el desplegable*/
+    width: 96%;/*Le damos un ancho ligeramente más pequeño que el del título*/
+    max-width: 1160px;/*Lo mismo para el ancho máximo*/
+    margin: 0;/*Eliminamos todo el margen posible para pegarlo todo lo posible*/
+    border-radius: 10px;/*Redondeamos las esquinas para suavizar el diseño*/
+    background-color: #ffffff;/*Fondo blanco*/
+    box-sizing: border-box;/*Ajustamos ese relleno dentro del ancho y alto disponible*/
+    font-size: 14px;/*Tamaño de fuente*/
+    line-height: 1.5;/*Aumentamos el tamaño entre párrafos*/
+    color: #1c1c1e;/*Color de texto oscuro*/
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /*Sombra suave*/
+    padding: 0px 25px;/*Margen lateral para el bloque*/
+}
+.rotando {/*Clase que agreraremos a los (+/-) para rotarlos*/
+    display: inline-block;/*Para aplicar la transformación*/
+    animation: rotarIcono 1s ease;/*Llamamos a la animación para rotarlo*/
+}
+@keyframes rotarIcono {/*Keyframes para la rotación de los íconos*/
+    from {
+        transform: rotate(0deg);/*Posición inicial*/
+    }
+    to {
+        transform: rotate(1440deg);/*Posición final*/
+    }
+}
+
+
+/*QUÉ ES LA SEG INF / SeguridadInformatica*/
+.bloqueSegInf{/*Div con todo el bloque de la pregunta*/
+    width: 90%;/*Le damos un width del 90% que con el margen hacemos que salga centrado y que tenga algo de margen a los lados*/ /* línea modificada: centrado con margin auto */
+    margin: 0 5%;
+    display: flex;/*Con display flex posicionamos las dos columnas una al lado de la otra*/
+    background-color: #e0e0e0; /*Color gris claro de fondo*/
+    border-radius: 20px; /*redondeamos las esquinas para suavizar el diseño*/
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /*Sombra suave*/
+    padding: 20px 40px; /*Relleno para el bloque*/
+    box-sizing: border-box;/*Ajustamos el tamaño contando con el margin y padding*/
+    margin-bottom: 50px;/*Añadimos un poco de margen inferior*/ /* queda redundante por arriba, pero lo dejo para aclarar */
+    gap: 30px; /*Espacio entre columnas*/
+    align-items: center;
+}
+.columnaSegImg{/*Div con la columna de la imagen*/
+    width: 40%;/*Asignamos un ancho a la columna*/
+    display: flex; /*Centramos la imagen*/
+    justify-content: center;
+}
+.columnaSegImg img{/*Imagen*/
+    width: 100%;/*Le damos todo el ancho posible a la imagen*/
+    border-radius: 20px;/*Redondeamos las esquinas para suavizar el diseño*/
+    object-fit: cover; /*Para que la imagen mantenga proporciones*/
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /*Sombra suave*/
+}
+.columnaSegTexto{/*Div con la columna del texto*/
+    text-align: left;/*Alineamos el texto a la izquierda*/
+    margin-left: 25px;/*Le damos un poco de margen al texto con la imagen*/
+    width: 60%;/*Ajustamos el ancho*/
+    box-sizing: border-box;/*Ajustamos el tamaño contando con el margin y padding*/
+    color: #333; /*Color oscuro de texto*/
+}
+.columnaSegTexto h2 {
+    font-size: 2.2rem; /*Tamaño de texto*/
+    color: #1C1C1E; /*Color oscuro de texto*/
+    margin-bottom: 15px; /*Margen con el texto*/
+    font-weight: 600; /*Texto en negrita*/
+}
+.columnaSegTexto p {
+    font-size: 1.1em; /*Tamaño de texto*/
+    line-height: 1.6; /*Agrandamos la altura de línea*/
+}
+
+
+/*GRUPOS HERRAMIENTAS / HerramientasUtiles*/
+.grupoHerramientas {/*Div contenedor principal del grupo de herramientas, 4 grupos*/
+    width: 90%;/*Ancho del 90% para dejar márgenes laterales*/
+    padding: 0 5%;/*Relleno lateral para centrar contenido*/
+    display: flex;/*Usamos flexbox para distribución flexible*/
+    flex-direction: column;/*Colocamos elementos en columna*/
+    margin: 30px 0;/*Margen vertical arriba y abajo*/
+}
+.contenidoHerramientas {/*Contenedor del contenido dentro del grupo de herramientas*/
+    display: flex;/*Flexbox para organización interna*/
+    flex-direction: column;/*Elementos en columna*/
+    align-items: center;/*Centramos elementos horizontalmente*/
+    width: 100%;/*Ancho completo del contenedor padre*/
+}
+.contenidoHerramientas h2 {/*Título dentro del contenidoHerramientas*/
+    font-size: 28px;/*Tamaño de fuente grande para el título*/
+    width: 100%;/*Ancho completo para el título*/
+    max-width: 1240px;/*Máximo ancho para evitar estiramiento excesivo*/
+    text-align: left;/*Alineamos texto a la izquierda*/
+    color: #1C1C1E;/*Color oscuro para el texto*/
+    margin-bottom: 15px;/*Margen inferior*/
+}
+.herramientas {/*Contenedor de todas las tarjetas/herramientas*/
+    width: 100%;/*Ancho completo*/
+    display: flex;/*Flexbox para colocar tarjetas*/
+    flex-direction: row;/*Fila horizontal*/
+    flex-wrap: wrap;/*Permite que las tarjetas pasen a otra fila*/
+    gap: 20px;/*Espacio entre tarjetas*/
+    justify-content: center;/*Centrado horizontal de las tarjetas*/
+}
+.herramienta {/*Cada tarjeta individual de herramienta*/
+    width: 400px;/*Ancho fijo estándar*/
+    min-width: 300px;/*Ancho mínimo para tarjetas pequeñas*/
+    background-color: #e0e0e0;/*Color gris claro de fondo*/
+    border-radius: 10px;/*Bordes redondeados para suavizar el diseño*/
+    display: flex;/*Flexbox para su contenido*/
+    flex-direction: column;/*Elementos dentro en columna*/
+    cursor: pointer;/*Cambio de cursor para indicar interactividad*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/*Sombra ligera*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;/*Transiciones suaves en hover*/
+    text-align: left;/*Alineación de texto a la izquierda*/
+    color: #1C1C1E;/*Color texto oscuro*/
+}
+.herramienta:hover {/*Efecto al pasar el ratón sobre la tarjeta*/
+    transform: scale(1.06);/*Aumenta ligeramente el tamaño*/
+    box-shadow: 0 6px 15px rgba(249, 168, 37, 0.5);/*Sombra amarilla más visible*/
+}
+.herramienta span {/*Barra superior dentro de la tarjeta*/
+    display: flex;/*Flexbox para distribución interna*/
+    flex-direction: row;/*Elementos en fila*/
+    justify-content: space-between;/*Separar elementos a los extremos*/
+    align-items: center;/*Centrar verticalmente*/
+    background-color: #1C1C1E;/*Fondo gris oscuro*/
+    padding: 20px 30px;/*Relleno interno para espacio*/
+    border-radius: 10px 10px 0 0;/*Redondeo solo en la parte superior*/
+}
+.herramienta span img {/*Imagen dentro de la barra superior*/
+    width: 30%;/*Ancho de la imagen relativa al contenedor*/
+    object-fit: contain;/*Mantiene proporciones dentro del espacio*/
+}
+.herramienta span h3 {/*Título dentro de la barra superior*/
+    color: #F9A825;/*Color amarillo de acento para destacar*/
+    font-size: 24px;/*Tamaño de fuente mediano*/
+    font-weight: 400;/*Peso de fuente normal*/
+    margin: 0;/*Sin margen para mejor alineación*/
+}
+.herramienta p {/*Párrafo descriptivo dentro de la tarjeta*/
+    padding: 20px 30px;/*Relleno para separación interna*/
+    margin: 0;/*Sin margen para evitar espacios extra*/
+    font-size: 16px;/*Tamaño de texto legible*/
+    line-height: 1.4;/*Altura de línea para facilitar lectura*/
+    color: #1C1C1E;/*Color texto oscuro*/
+}
+/*Fondo oscuro semi-transparente*/
+.overlay {/*Capa que oscurece fondo cuando popup está activo*/
+    position: fixed;/*Fija la posición en pantalla completa*/
+    top: 0;
+    left: 0;
+    width: 100%;/*Ancho completo de la ventana*/
+    height: 100%;/*Altura completa de la ventana*/
+    background-color: rgba(28, 28, 30, 0.8);/*Color gris con opacidad*/
+    backdrop-filter: blur(6px);/*Efecto desenfoque de fondo*/
+    z-index: 9999;/*Por encima de casi todo*/
+}
+/*Popup*/
+.popup {/*Ventana modal emergente centrada*/
+    position: fixed;/*Posición fija para estar siempre visible*/
+    top: 50%;/*Centro vertical*/
+    left: 50%;/*Centro horizontal*/
+    transform: translate(-50%, -50%);/*Compensación para centrar exactamente*/
+    background-color: #1c1c1e;/*Fondo gris oscuro*/
+    color: #e0e0e0;/*Texto gris claro*/
+    border-radius: 15px;/*Bordes redondeados*/
+    padding: 30px 35px;/*Relleno interno para contenido*/
+    width: 600px;/*Ancho fijo*/
+    max-width: 90%;/*Máximo ancho adaptable a pantalla*/
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);/*Sombra profunda*/
+    z-index: 10000;/*Por encima de overlay*/
+    display: flex;/*Flexbox para el contenido*/
+    flex-direction: column;/*Elementos en columna*/
+}
+.contenidoDesplegable {/*Contenedor principal del contenido dentro del popup*/
+    width: 100%;/*Ancho completo*/
+}
+.contenidoDesplegable button {/*Botón para cerrar el popup*/
+    background-color: transparent;/*Sin fondo*/
+    border: none;/*Sin borde*/
+    font-size: 28px;/*Tamaño grande para visibilidad*/
+    cursor: pointer;/*Cursor pointer para indicar clicable*/
+    color: #F9A825;/*Color amarillo de acento*/
+    font-weight: 700;/*Fuente negrita*/
+    margin-bottom: 15px;/*Espacio abajo*/
+    transition: color 0.3s ease;/*Transición suave en cambio de color*/
+}
+.contenidoDesplegable button:hover {/*Cambio de color al pasar ratón*/
+    color: #ffffff;/*Color blanco al hover*/
+}
+.contenidoDesplegable h3 {/*Título del popup*/
+    margin-bottom: 15px;/*Espacio abajo*/
+    font-size: 26px;/*Tamaño de fuente grande*/
+    font-weight: 700;/*Fuente negrita*/
+    color: #F9A825;/*Color amarillo de acento*/
+    text-align: center;/*Centrado*/
+}
+.contenidoDesplegable p {/*Párrafo dentro del popup*/
+    font-size: 16.5px;/*Tamaño legible*/
+    line-height: 1.6;/*Altura de línea para facilitar lectura*/
+    color: #e0e0e0;/*Color gris claro*/
+    text-align: justify;/*Justificado para mejor estética*/
+    max-height: 280px;/*Máximo alto con scroll si excede*/
+    overflow-y: auto;/*Scroll vertical si el texto es largo*/
+    padding-right: 8px;/*Pequeño padding derecho para scroll*/
+}
+
+
+/*FRASES CAMBIANTES / BiografíaInformática*/
+.frasesCambiantes {/*Div contenedor principal de las frases cambiantes*/
+    width: 90%;/*Ancho del 90% para mantener márgenes laterales*/
+    margin: 0 5%;/*Centrado horizontal*/
+    background-color: #ffffff;/*Fondo blanco para destacar el contenido*/
+    border-left: 8px solid #F9A825;/*Borde izquierdo amarillo como acento*/
+    border-radius: 16px;/*Esquinas redondeadas para suavizar el diseño*/
+    padding: 30px;/*Espaciado interno amplio*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);/*Sombra para resaltar el bloque*/
+    box-sizing: border-box;/*Incluye padding y borde en el cálculo de tamaño*/
+    display: flex;/*Flexbox para organizar el contenido en columna*/
+    flex-direction: column;/*Elementos apilados verticalmente*/
+    align-items: flex-start;/*Alineación a la izquierda del contenido*/
+    gap: 1rem;/*Espacio entre frases*/
+    cursor: pointer;/*Cursor indica que el bloque es interactivo*/
+    transition: box-shadow 0.3s ease, transform 0.3s ease;/*Transiciones suaves al hacer hover*/
+}
+.frasesCambiantes:hover {/*Efecto al pasar el ratón por encima del bloque*/
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);/*Sombra más intensa*/
+    transform: scale(1.01);/*Ligero aumento de tamaño*/
+}
+.frasesCambiantes p {/*Frase principal destacada*/
+    font-family: Georgia, 'Times New Roman', Times, serif;/*Fuente clásica y elegante*/
+    font-weight: 600;/*Texto en negrita moderada*/
+    font-size: 1.5rem;/*Tamaño de fuente grande*/
+    font-style: italic;/*Texto en cursiva para énfasis*/
+    color: #1c1c1e;/*Color oscuro para buena legibilidad*/
+    margin: 0;/*Sin margen extra*/
+    line-height: 1.4;/*Espaciado entre líneas adecuado*/
+}
+.frasesCambiantes span {/*Nombre o autor de la frase*/
+    font-family: 'Trebuchet MS', sans-serif;/*Fuente moderna y legible*/
+    font-size: 1.1rem;/*Tamaño ligeramente menor que la frase*/
+    font-style: italic;/*Cursiva para diferenciar del texto normal*/
+    font-weight: 400;/*Peso de fuente regular*/
+    color: #333;/*Gris medio de color*/
+}
+
+
+/*TARJETAS VOLTEABLES / BiografiaInformatica*/
+.bloqueTarjetas{/*Div principal que contiene todas las tarjetas*/
+    width: 100%;/*Ocupamos todo el ancho disponible*/
+    padding: 50px 0;/*Espaciado superior e inferior*/
+}
+.tarjetasLineaTiempo {/*Grid que organiza las tarjetas*/
+    display: grid;/*Usamos grid para la disposición flexible*/
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));/*Columnas adaptables según ancho disponible*/
+    gap: 2rem;/*Espacio entre tarjetas*/
+    padding: 20px 4%;/*Espaciado interno en los lados*/
+    justify-items: center;/*Centramos horizontalmente las tarjetas en su celda*/
+}
+.flip-card {/*Contenedor externo de cada tarjeta*/
+    background-color: transparent;/*Sin fondo para que solo se vea la tarjeta*/
+    width: 100%;/*Ocupamos todo el ancho del contenedor padre*/
+    max-width: 260px;/*Limitamos el ancho máximo*/
+    height: 200px;/*Altura fija para las tarjetas*/
+    perspective: 1000px;/*Profundidad de la perspectiva 3D para el efecto de giro*/
+}
+.flip-card-inner {/*Contenedor interior que se gira*/
+    position: relative;/*Para posicionar las caras superpuestas*/
+    width: 100%;/*Ancho completo del contenedor exterior*/
+    height: 100%;/*Altura completa del contenedor exterior*/
+    transform-style: preserve-3d;/*Mantenemos las caras en 3D*/
+    transition: transform 0.6s ease;/*Transición suave al girar*/
+}
+.flip-card:hover .flip-card-inner {/*Giro horizontal al pasar el ratón*/
+    transform: rotateY(180deg);/*Giramos 180 grados en eje Y*/
+}
+.flip-card-front,
+.flip-card-back {/*Ambas caras de la tarjeta*/
+    position: absolute;/*Superpuestas una sobre otra*/
+    width: 100%;/*Ancho completo de la tarjeta*/
+    height: 100%;/*Altura completa de la tarjeta*/
+    backface-visibility: hidden;/*Ocultamos la cara trasera al no estar activa*/
+    border-radius: 12px;/*Bordes redondeados para diseño suave*/
+    display: flex;/*Centrado de contenido*/
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;/*Relleno interior*/
+    text-align: center;/*Centramos el texto*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);/*Sombra ligera para destacar*/
+    box-sizing: border-box; /*Importante para que padding no afecte tamaño*/
+}
+.flip-card-front {/*Cara delantera de la tarjeta*/
+    background-color: #1C1C1E;/*Fondo gris oscuro*/
+    color: #F9A825;/*Texto en color amarillo (acento)*/
+    font-weight: bold;/*Texto más marcado*/
+} 
+.flip-card-back {/*Cara trasera de la tarjeta*/
+    background-color: #1C1C1E;/*Fondo gris oscuro (igual que la delantera)*/
+    color: #E0E0E0;/*Texto gris claro*/
+    transform: rotateY(180deg);/*Girada para coincidir con el giro del contenedor*/
+    font-size: 0.95rem;/*Tamaño de texto ligeramente menor*/
+}
+
+
+/*FORMULARIOS / Contacto / Home*/
+.formularios {/*Contenedor principal del bloque de formularios*/
+    width: 90%;/*Ancho del 90% para dejar márgenes laterales*/
+    padding: 0 5%;/*Relleno lateral para centrar contenido*/
+    display: flex;/*Flexbox para distribución flexible*/
+    flex-direction: column;/*Elementos en columna*/
+    justify-content: center;/*Centrado vertical*/
+    align-items: center;/*Centrado horizontal*/
+    font-family: 'Poppins', sans-serif;/*Fuente principal*/
+    color: #e0e0e0;/*Color gris claro para el texto*/
+}
+.bloquesGrupos {/*Contenedor de los grupos de bloques*/
+    position: relative;/*Para posicionamiento absoluto interno*/
+    width: 100%;/*Ancho completo*/
+    margin-top: 0;/*Sin margen superior*/
+    overflow: hidden;/*Oculta contenido fuera del contenedor*/
+}
+.bloquesGrupos > div {/*Cada grupo individual dentro de bloquesGrupos*/
+    position: absolute;/*Apilados unos sobre otros*/
+    top: 0;
+    left: 0;
+    width: 100%;/*Ancho completo*/
+    transition: opacity 0.5s ease-in-out;/*Transición suave al cambiar*/
+    display: flex;/*Flexbox para distribución interna*/
+    flex-direction: column;/*Elementos en columna*/
+    padding: 0;/*Sin relleno interno*/
+}
+form {/*Reseteamos todos los estilos del formulario*/
+    all: unset;
+}
+.bloqueFormulario {/*Bloque horizontal con formulario e imagen*/
+    width: 90%;/*Ancho general*/
+    padding: 3% 5%;/*Relleno interno*/
+    display: flex;/*Distribución horizontal*/
+    flex-direction: row;/*Elementos en fila*/
+    justify-content: space-between;/*Separación entre elementos*/
+    align-items: center;/*Alineación vertical centrada*/
+    gap: 2rem;/*Espacio entre elementos*/
+}
+.formularioDudas,
+.imgFormulario {/*Ambos elementos con 45% de ancho*/
+    width: 45%;
+    padding: 0 1%;/*Espaciado interior lateral*/
+}
+.imgFormulario img {/*Imagen del lado derecho del formulario*/
+    width: 100%;
+    height: auto;
+    border-radius: 20px;/*Bordes redondeados*/
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);/*Sombra para profundidad*/
+    object-fit: cover;/*Cubre el área sin deformarse*/
+    display: block;
+}
+.fondoFormulario {/*Caja de fondo donde va el formulario*/
+    background-color: #1c1c1e;/*Fondo oscuro*/
+    border-radius: 25px;/*Bordes redondeados*/
+    padding: 25px 30px;/*Espacio interno*/
+    box-shadow: 0 6px 25px rgba(249, 168, 37, 0.3);/*Sombra amarilla suave*/
+    box-sizing: border-box;
+    width: 100%;/*Ancho completo*/
+    color: #e0e0e0;/*Texto gris claro*/
+    display: flex;
+    flex-direction: column;
+    gap: 1em;/*Espacio entre elementos del formulario*/
+}
+.tituloForm {/*Título principal del formulario*/
+    color: #F9A825 !important;/*Color amarillo*/
+    font-size: 28px;/*Tamaño grande*/
+    font-weight: 700;/*Texto en negrita*/
+    margin-bottom: 0.2rem;/*Margen inferior corto*/
+}
+.subtitForm {/*Subtítulo del formulario*/
+    font-size: 18px;
+    color: #e0e0e0;
+    font-style: italic;
+    margin-bottom: 1.5em;
+}
+.apartForm {/*Contenedor de input o textarea*/
+    width: 100%;
+    margin: 0.5em 0;/*Espacio vertical entre apartados*/
+}
+.apartForm input,
+.apartForm textarea {/*Campos de texto del formulario*/
+    width: 100%;
+    border: none;
+    background-color: #2c2c2e;/*Gris oscuro*/
+    font-size: 16px;
+    border-radius: 10px;/*Bordes redondeados*/
+    padding: 12px 15px;
+    color: #f0f0f0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.apartForm input[type="text"],
+.apartForm input[type="email"] {/*Altura estándar de inputs*/
+    height: 40px;
+}
+.apartForm textarea {/*Ajuste específico para el textarea*/
+    font-family: 'Poppins', sans-serif;
+    height: 100px;
+    resize: vertical;
+}
+.apartForm input:focus,
+.apartForm textarea:focus {/*Estilo al enfocar campos*/
+    background-color: #3a3a3c;
+    outline: none;
+    box-shadow: 0 0 5px 2px #F9A825;
+    color: white;
+}
+.bloqueCheckbox,
+.bloqueTextarea {/*Agrupadores por tipo*/
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    color: #e0e0e0;
+}
+.bloqueCheckbox {/*Checkbox en columna alineados a la izquierda*/
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.bloqueCheckbox input {/*Ajuste tamaño checkbox*/
+    width: auto;
+    height: auto;
+}
+.checkbox {/*Checkbox con su texto alineado horizontalmente*/
+    display: flex;/*Alineación en fila*/
+    align-items: center;/*Centrado vertical del texto respecto al checkbox*/
+    gap: 10px;/*Espacio entre el checkbox y su texto*/
+    cursor: pointer;/*Cursor tipo puntero al pasar por encima*/
+}
+.bloqueValoracion {/*Contenedor principal de las estrellas de valoración*/
+    display: flex;/*Para organizar el contenido internamente*/
+    justify-content: flex-start;/*Alineación a la izquierda*/
+    position: relative;/*Necesario para posicionar las estrellas absolutamente*/
+    color: #e0e0e0;/*Color gris claro del texto*/
+}
+.estrellas {/*Contenedor de inputs*/
+    position: absolute;/*Posición absoluta respecto a bloqueValoracion*/
+    top: 40px;/*Separación vertical desde la parte superior del contenedor*/
+    left: 0;/*Alineado a la izquierda*/
+    display: flex;/*Organiza los elementos en fila*/
+    width: auto;/*Ancho según contenido*/
+    gap: 10px;/*Espacio entre estrellas*/
+    flex-direction: row-reverse;/*Orden inverso para que al hacer hover se rellenen correctamente*/
+}
+.estrellas input {/*Ocultamos los radios para personalizar las estrellas*/
+    display: none;/*No visibles pero funcionales*/
+}
+.estrellas label {/*Visualización de estrellas como etiquetas*/
+    font-size: 30px;/*Tamaño grande para visibilidad*/
+    color: gray;/*Color gris por defecto*/
+    cursor: pointer;/*Cursor tipo puntero*/
+    transition: color 0.3s ease;/*Transición suave al cambiar de color*/
+}
+.estrellas label:hover,
+.estrellas label:hover ~ label {/*Al pasar el ratón sobre una estrella, esa y todas las anteriores cambian de color*/
+    color: #F9A825;/*Color amarillo al hacer hover*/
+}
+.estrellas input:checked ~ label {/*Estrellas activadas al seleccionar (click)*/
+    color: #F9A825;/*Permanecen amarillas*/
+}
+button, input[type="submit"], input[type="reset"] {/*Estilo común para botones del formulario*/
+    background-color: #F9A825;/*Fondo amarillo*/
+    color: #1c1c1e;/*Texto gris antracita*/
+    font-family: 'Poppins', sans-serif;/*Fuente principal*/
+    font-weight: 600;/*Texto en seminegrita*/
+    font-size: 16px;/*Tamaño legible*/
+    border: none;/*Sin bordes*/
+    border-radius: 12px;/*Esquinas redondeadas*/
+    padding: 12px 25px;/*Espaciado interno*/
+    cursor: pointer;/*Puntero tipo mano*/
+    box-shadow: 0 4px 12px rgba(249, 168, 37, 0.6);/*Sombra para dar profundidad*/
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;/*Transiciones suaves*/
+    user-select: none;/*Evita que se seleccione el texto al hacer clic*/
+    margin-top: 1rem;/*Separación superior*/
+    display: inline-block;/*Permite que se alinee horizontalmente si hay más botones*/
+}
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {/*Estilo al pasar el cursor por encima*/
+    background-color: #c79100;/*Tono más oscuro de amarillo*/
+    box-shadow: 0 6px 20px rgba(199, 145, 0, 0.8);/*Sombra más pronunciada*/
+    transform: translateY(-2px);/*Ligero efecto de elevación*/
+}
+form > button,
+form > input[type="submit"],
+form > input[type="reset"] {/*Separación horizontal entre botones*/
+    margin-right: 1rem;/*Margen derecho para evitar que se peguen*/
+}

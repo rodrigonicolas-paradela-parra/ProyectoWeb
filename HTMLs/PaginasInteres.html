@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Páginas de Interés TFG Rodrigo Paradela</title><!--Título de la página-->
+        <link rel="stylesheet" type="text/css" href="../TFG.css"><!--Enlace al CSS de la página-->
+        <script defer src="../JSs/PaginasInteres.js"></script><!--Enlace al JS de la página-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+        <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+        <meta name="description" content="Páginas de interés para cualquier informático. Aquí se encontrarán recursos de consulta para distintos ámbitos de la informática"><!--Breve descripción de la página-->
+        <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+        <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->
+    </head>
+    <body>
+        <div class="outer"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+            <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+    
+                <!--TÍTULO-->
+                <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                    <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                    <p><i>El perfecto cuaderno de bitácora para un desarrollador.</i></p><!--Subtítulo de la página-->
+                </div><!--Fin del div titulo-->
+                
+                <!--MENÚ DESPLEGABLE-->
+                <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                    <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                        <li><a href="Index.html">Home</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                        <li><a href="">Puntos de Informático ⬇</a>
+                            <ul class="submenu"><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li correspondiente-->
+                                <li><a href="BuenasPracticas.html">Buenas Prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad Informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas importantes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="HerramientasUtiles.html">Herramientas Útiles</a></li>
+                        <li><a href="BiografiaInformatica.html">Biografía Informática</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>  
+                </div><!--Fin del menú desplegable-->
+
+                <!--DESCRIPCIÓN-->
+                <div class="descripcion" style="margin: 40px 5%;"><!--Div con todo el bloque de la descripción.-->
+                    <h1>El kit de supervivencia del informático: páginas que debes conocer</h1><!--Título de la página-->
+                    <div class="descripcion-cols"><!--A diferencia de la home, div que contendrá dos columnas-->
+                        <div class="descripcion-coltexto"><!--Columna con un párrafo para el texto de la descripción-->
+                            <p class="descripcion-texto">En el mundo de la informática, estar al día con las mejores herramientas, foros y recursos es fundamental para seguir creciendo y adaptarse a un sector en constante evolución. Tanto si eres programador, administrador de sistemas, analista de datos o simplemente un apasionado de la tecnología, contar con fuentes fiables y comunidades activas puede marcar la diferencia en tu desarrollo profesional y personal.<br><br>
+                                En esta sección encontrarás una selección de páginas imprescindibles que te ayudarán a mejorar tus habilidades, resolver dudas y mantenerte actualizado con las últimas tendencias del sector. Desde plataformas de aprendizaje y documentación técnica hasta foros de discusión y espacios de colaboración en proyectos de código abierto, aquí descubrirás recursos clave para potenciar tu conocimiento, optimizar tu flujo de trabajo y conectarte con otros profesionales del mundo digital.<br><br>
+                                Independientemente de tu nivel de experiencia, estas webs te ofrecerán contenido valioso, herramientas prácticas y oportunidades para crecer en el ámbito de la informática. ¡Explora, aprende y lleva tus habilidades al siguiente nivel!
+                            </p>
+                        </div><!--Fin de la columna del texto-->    
+                        <div class="descripcion-colimg"><!--Columna para la imagen que aparecerá al lado del texto-->
+                            <img src="../IMGs/descripcionPagInt.png">
+                        </div><!--Fin de la columna de la imagen-->
+                    </div><!--Fin del div que contiene las dos columnas-->
+                </div><!--Fin de la descripción-->
+                
+                <!-- PÁGINAS DE INTERÉS -->
+                <div class="pagInteres"><!--Div que contiene todo el bloque de las páginas, desde los botones de grupos hasta el contenido de ellos-->
+                    <div class="grupos"><!--Div que contiene los 3 botones para cambiar de grupo de páginas-->
+                        <div class="activo"></div><!--Div que tendrá posición absoluta y que se ira desplazando entre los grupos dependiendo del grupo activo-->
+                        <div class="grupo">Colaboración</div>
+                        <div class="grupo" style="padding-left: 24px; padding-right: 16px;">Formación</div>
+                        <div class="grupo" style="padding-left: 15px; padding-right: 25px;">Front-end</div>
+                    </div><!--Fin del div de los botones de los grupos-->
+
+                    <div class="bloquesGrupos"><!--Div que contiene los 3 grupos de páginas-->
+                        
+                        <div class="grupo1"><!--Div que contiene el primer grupo-->
+
+                            <h1>Herramientas de colaboración para desarrolladores</h1><!--Título para el grupo que sea--><!--Un párrafo p para una descripción del grupo-->
+                            <p class="descripcionPagInt">Este grupo se centra en herramientas y comunidades que ayudan a los desarrolladores a trabajar juntos, gestionar sus proyectos, resolver dudas y compartir conocimientos. Son fundamentales para fomentar la colaboración en equipo, llevar un buen control de versiones y mejorar continuamente gracias al intercambio de ideas. Ya sea que trabajes en el front-end, el back-end o como desarrollador full-stack, estas plataformas permiten crecer profesionalmente, aprender de la experiencia de otros y mantenerse al día con las mejores prácticas del sector.</p>
+                            
+                            <div class="columnasInteres"><!--Div que contiene las páginas de interés-->
+
+                                <div class="pagInt1 from-right" style="direction: ltr;"><!--Div que contiene una página-->
+                                    <div class="columnaIntTexto"><!--Una primera columna con el título de la página, descripción de ella y botón para acceder-->
+                                        <h2>Github</h2><!--Título--><!--Párrafo p descripción-->
+                                        <p>GitHub es una plataforma de desarrollo colaborativo basada en Git donde los programadores pueden alojar, versionar y compartir sus proyectos. Permite gestionar repositorios públicos y privados, seguir cambios en el código, reportar errores, hacer revisiones y colaborar con otros desarrolladores de forma estructurada. También incluye herramientas como wikis, foros y automatizaciones que facilitan el trabajo en equipo. Es muy usada tanto en proyectos de código abierto como en desarrollos profesionales y personales.</p> 
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://github.com/">Más información</a><!--Botón para acceder a la página-->
+                                        </div><!--Fin del div para el margen del botón-->
+                                    </div><!--Fin de la columna del texto-->
+                                    <div class="columnaIntImg"><!--Columna del logo de la página-->
+                                        <img src="../IMGs/logoGithub.png">
+                                    </div><!--Fin de la columna del logo-->
+                                </div><!--Fin del div que contiene la página-->
+                                <div class="pagInt1 from-left" style="direction: rtl;">
+                                    <div class="columnaIntTexto">
+                                        <h2>StackOverflow</h2>
+                                        <p>Stack Overflow es una de las comunidades de preguntas y respuestas más grandes y activas del mundo para programadores y desarrolladores. En esta plataforma, los usuarios pueden plantear dudas técnicas, responder a problemas de otros y compartir soluciones relacionadas con cualquier lenguaje de programación, tecnología o herramienta. Es un recurso imprescindible tanto para principiantes como para profesionales, ya que permite aprender de experiencias reales, encontrar soluciones rápidas a errores comunes o complejos y descubrir buenas prácticas de desarrollo. Cada respuesta puede ser votada por la comunidad, lo que ayuda a identificar fácilmente las más útiles o completas.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://stackoverflow.com/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logoStackOverflow.png">
+                                    </div>
+                                </div>
+                                <div class="pagInt1 from-right" style="direction: ltr;">
+                                    <div class="columnaIntTexto">
+                                        <h2>Dev.to</h2>
+                                        <p>Dev.to es una plataforma social pensada para que los desarrolladores compartan artículos, tutoriales, proyectos personales y recursos técnicos. Funciona como una comunidad abierta donde cualquier persona puede publicar contenido, comentar, debatir y aprender de otros programadores, sin importar su nivel de experiencia. Los temas que se tratan van desde desarrollo web, buenas prácticas, frameworks o experiencias laborales, hasta aspectos más avanzados como arquitectura de software o reflexión sobre la industria. Es un lugar ideal para mantenerse actualizado y participar activamente en el ecosistema del desarrollo.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://dev.to/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/LogoDevto.png">
+                                    </div>
+                                </div>
+                                <div class="pagInt1 from-left" style="direction: rtl;">
+                                    <div class="columnaIntTexto">
+                                        <h2>Reddit/r/programming</h2>
+                                        <p>El subreddit r/programming es una de las comunidades más grandes y activas dentro de Reddit centradas en el mundo del desarrollo de software. Aquí los usuarios comparten noticias tecnológicas, artículos interesantes, tutoriales, dudas, herramientas útiles y debates sobre todo tipo de lenguajes, frameworks y metodologías. Es un espacio donde puedes descubrir tendencias, preguntar a otros desarrolladores y participar en conversaciones sobre la evolución del sector, siempre desde una perspectiva comunitaria y colaborativa. También suele haber debates éticos, recomendaciones y experiencias laborales reales.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://www.reddit.com/r/programming/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logoReddit.png">
+                                    </div>
+                                </div>
+                                <div class="pagInt1 from-right" style="direction: ltr;">
+                                    <div class="columnaIntTexto">
+                                        <h2>FreeCodeCamp</h2>
+                                        <p>FreeCodeCamp es una plataforma de formación online totalmente gratuita que ofrece rutas de aprendizaje completas sobre desarrollo web, algoritmos, estructuras de datos y más. Cada módulo combina teoría con ejercicios prácticos, y los usuarios pueden obtener certificaciones oficiales al finalizar los proyectos. Además de su extenso plan de estudios, FreeCodeCamp cuenta con una comunidad muy activa a través de foros, grupos y canales donde los estudiantes pueden resolver dudas, colaborar y compartir conocimientos. Es una herramienta muy útil tanto para empezar desde cero como para reforzar habilidades técnicas específicas de cara al mundo laboral.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://www.freecodecamp.org/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logoFreecodecamp.png">
+                                    </div>
+                                </div>
+
+                            </div><!--Fin del div que contiene todas las páginas-->
+                        
+                        </div><!--Fin del div del grupo 1-->
+
+                        <div class="grupo2" style="opacity: 0; pointer-events: none;"><!--Div del segundo grupo. Lo ocultamos inicialmente-->
+
+                            <h1>Formación y práctica en programación</h1>
+                            <p class="descripcionPagInt">Este grupo reúne recursos educativos que te enseñan desde cero o te ayudan a mejorar como programador, ya sea con tutoriales, retos de código o cursos universitarios. Están pensados para estudiantes, autodidactas o cualquier persona que quiera prepararse para entrevistas técnicas, reforzar su lógica de programación y dominar distintos lenguajes. Además, muchos de estos recursos permiten aprender de forma práctica, a tu ritmo, y adaptarse a distintos niveles, desde principiante hasta avanzado, lo que los convierte en una base sólida para seguir creciendo en el mundo del desarrollo.</p>
+                            
+                            <div class="columnasInteres">
+                                
+                                <div class="pagInt2 from-right" style="direction: ltr;">
+                                    <div class="columnaIntTexto">
+                                        <h2>Codecademy</h2>
+                                        <p>Codecademy es una plataforma interactiva diseñada para que cualquier persona pueda aprender a programar desde cero o mejorar sus habilidades en distintos lenguajes. Ofrece cursos estructurados y progresivos en lenguajes populares como Python, JavaScript, HTML, CSS, SQL y muchos más. Cada lección combina teoría clara, ejemplos prácticos y ejercicios que se pueden resolver directamente desde el navegador, sin necesidad de instalar nada. Además, incluye proyectos reales para aplicar lo aprendido y una comunidad donde compartir dudas y consejos. Es muy útil tanto para principiantes como para quienes buscan ampliar su conocimiento de manera guiada.</p> 
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://www.codecademy.com/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logoCodecademy.png">
+                                    </div>
+                                </div>
+                                
+                                <div class="pagInt2 from-left" style="direction: rtl;">
+                                    <div class="columnaIntTexto">
+                                        <h2>Khan Academy</h2>
+                                        <p>Khan Academy tiene una sección dedicada a la informática y programación que resulta perfecta para quienes empiezan desde cero. Sus cursos son totalmente gratuitos y combinan vídeos explicativos, ejemplos interactivos y ejercicios prácticos sobre temas como JavaScript, animaciones, lógica de programación y conceptos básicos de computación. La plataforma es muy accesible y está diseñada para que el aprendizaje sea ameno y progresivo, ideal para estudiantes, autodidactas y cualquier persona interesada en adquirir una base sólida en programación sin coste alguno.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://es.khanacademy.org/computing/computer-programming">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logoKhanacademy.png">
+                                    </div>
+                                </div>
+                                
+                                <div class="pagInt2 from-right" style="direction: ltr;">
+                                    <div class="columnaIntTexto">
+                                        <h2>W3Schools</h2>
+                                        <p>W3Schools es uno de los recursos más populares y reconocidos para aprender desarrollo web. Ofrece tutoriales detallados y fáciles de entender sobre HTML, CSS, JavaScript, SQL, Python y otros lenguajes relevantes para la creación y gestión de sitios web. Cada tema incluye explicaciones claras y ejercicios prácticos que se pueden probar directamente en su editor en línea, lo que permite experimentar y practicar de forma inmediata. Es una plataforma ideal para quienes buscan un aprendizaje rápido y efectivo con materiales accesibles y bien organizados.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://www.w3schools.com/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logoW3schools.png">
+                                    </div>
+                                </div>
+                                
+                                <div class="pagInt2 from-left" style="direction: rtl;">
+                                    <div class="columnaIntTexto">
+                                        <h2>Codewars</h2>
+                                        <p>Codewars es una plataforma enfocada en mejorar tus habilidades de programación mediante la resolución de "katas", que son retos o ejercicios de código clasificados según dificultad. Puedes practicar en más de 20 lenguajes distintos y competir con otros usuarios para subir de nivel y medir tu progreso. Cada kata está diseñada para ayudarte a pensar de manera lógica y creativa, mejorando tu capacidad para resolver problemas reales con código. Es especialmente útil para quienes disfrutan aprender a través de retos prácticos y quieren fortalecer sus conocimientos en programación de forma dinámica y divertida.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://www.codewars.com/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logocodewars.png">
+                                    </div>
+                                </div>
+                                
+                                <div class="pagInt2 from-right" style="direction: ltr;">
+                                    <div class="columnaIntTexto">
+                                        <h2>Exercism</h2>
+                                        <p>Exercism es una plataforma gratuita diseñada para que puedas practicar programación a través de ejercicios reales y desafiantes. Cuenta con más de 60 lenguajes disponibles, por lo que puedes aprender y mejorar en el que prefieras. Además, ofrece la posibilidad de recibir feedback personalizado de mentores expertos, lo que ayuda a corregir errores y perfeccionar tu código. La plataforma permite hacer un seguimiento detallado de tu progreso para que puedas ver cómo avanzas con el tiempo. Su enfoque está en fomentar la práctica constante y el aprendizaje activo, ideal para quienes quieren consolidar sus habilidades de programación con ejercicios prácticos y apoyo de la comunidad.</p>
+                                        <div class="boton"><!--Div para añadir margen al botón-->
+                                            <a href="https://exercism.org/">Más información</a>
+                                        </div>
+                                    </div>
+                                    <div class="columnaIntImg">
+                                        <img src="../IMGs/logoExercism.png">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div><!--Fin del div del grupo 2-->
+
+                        <div class="grupo3" style="opacity: 0; pointer-events: none;"><!--Div del tercer grupo. Lo ocultamos inicialmente-->
+
+                            <h1>Desarrollo web y tecnologías del front-end</h1>
+                            <p class="descripcionPagInt">Este bloque está centrado en la creación de sitios web, especialmente en la parte visual y funcional de la interfaz (front-end). Aquí se encuentran recursos y plataformas para aprender a crear, diseñar y desarrollar páginas web interactivas y responsivas utilizando tecnologías como HTML, CSS, JavaScript y frameworks modernos. También incluye herramientas útiles para perfeccionar aspectos como la accesibilidad, el rendimiento o el diseño adaptativo, lo que resulta ideal para quienes buscan especializarse en la experiencia del usuario y el desarrollo web actual.</p>
+                            
+                            <div class="columnasInteres">
+                               
+                                <div class="pagInt3 from-right" style="direction: ltr;">
+                                        <div class="columnaIntTexto">
+                                            <h2>CodePen</h2>
+                                            <p>Codepen es una plataforma online donde puedes probar, compartir y descubrir fragmentos de código en HTML, CSS y JavaScript en tiempo real. Es perfecta para crear prototipos rápidos sin necesidad de configurar un entorno local, lo que facilita experimentar con ideas y diseños al instante. Además, es una comunidad activa donde puedes aprender de otros desarrolladores viendo sus proyectos y obtener inspiración para tus propios trabajos. Es muy útil tanto para principiantes que quieren practicar como para profesionales que quieren mostrar su trabajo o probar nuevas técnicas.</p>
+                                            <div class="boton"><!--Div para añadir margen al botón-->
+                                                <a href="https://codepen.io/">Más información</a>
+                                            </div>
+                                        </div>
+                                        <div class="columnaIntImg">
+                                            <img src="../IMGs/logoCodepen.png">
+                                        </div>
+                                </div>
+                               
+                                <div class="pagInt3 from-left" style="direction: rtl;">
+                                        <div class="columnaIntTexto">
+                                            <h2>CSS-Tricks</h2>
+                                            <p>CSS-Tricks es un blog fundamental para cualquier desarrollador front-end, donde encontrarás artículos, tutoriales, guías detalladas y fragmentos de código (snippets) que ayudan a resolver problemas comunes de CSS y diseño web. Cubre temas variados como animaciones, responsive design, flexbox, grid y mucho más, con explicaciones claras y ejemplos prácticos. Es un recurso muy valorado para aprender nuevas técnicas, mantenerse actualizado con las tendencias y encontrar soluciones rápidas a retos de estilo y maquetación.</p>
+                                            <div class="boton"><!--Div para añadir margen al botón-->
+                                                <a href="https://css-tricks.com/">Más información</a>
+                                            </div>
+                                        </div>
+                                        <div class="columnaIntImg">
+                                            <img src="../IMGs/logoCsstricks.png">
+                                        </div>
+                                </div>
+                                
+                                <div class="pagInt3 from-right" style="direction: ltr;">
+                                        <div class="columnaIntTexto">
+                                            <h2>Can I use</h2>
+                                            <p>Can I Use es una herramienta esencial para desarrolladores web que necesitan verificar la compatibilidad de propiedades CSS, funciones de JavaScript y otras tecnologías web en diferentes navegadores y versiones. Te permite consultar rápidamente qué características son soportadas y en qué entornos, evitando problemas de visualización o funcionalidad en los sitios que desarrollas. Usar esta página es fundamental para asegurarte de que tus proyectos funcionen correctamente y sean accesibles para todos los usuarios, independientemente del navegador que utilicen.</p>
+                                            <div class="boton"><!--Div para añadir margen al botón-->
+                                                <a href="https://caniuse.com/">Más información</a>
+                                            </div>
+                                        </div>
+                                        <div class="columnaIntImg">
+                                            <img src="../IMGs/logoCaniuse.png">
+                                        </div>
+                                </div>
+                                
+                                <div class="pagInt3 from-left" style="direction: rtl;">
+                                        <div class="columnaIntTexto">
+                                            <h2>HTML5 UP</h2>
+                                            <p>HTML5 UP ofrece una colección de plantillas web gratuitas, modernas y completamente responsivas, construidas con HTML5 y CSS3. Estas plantillas son ideales para proyectos personales, demostraciones rápidas o para practicar el diseño y desarrollo web sin empezar desde cero. Además de estar bien diseñadas y optimizadas para distintos dispositivos, son fáciles de personalizar, lo que las convierte en un recurso muy útil para quienes quieren aprender a crear páginas atractivas y funcionales de forma ágil.</p>
+                                            <div class="boton"><!--Div para añadir margen al botón-->
+                                                <a href="https://html5up.net/">Más información</a>
+                                            </div>
+                                        </div>
+                                        <div class="columnaIntImg">
+                                            <img src="../IMGs/logohtml5up.png">
+                                        </div>
+                                </div>
+                                
+                                <div class="pagInt3 from-right" style="direction: ltr;">
+                                        <div class="columnaIntTexto">
+                                            <h2>Frontend Mentor</h2>
+                                            <p>Frontend Mentor es una plataforma que propone retos reales de diseño web para que puedas practicar HTML, CSS y JavaScript en un contexto práctico y aplicado. Los usuarios reciben maquetas y diseños que deben reproducir, lo que ayuda a mejorar habilidades en maquetación, responsive design y funcionalidad. Además, puedes comparar tus soluciones con las de otros usuarios, lo que favorece el aprendizaje colaborativo y la mejora continua. Es una herramienta excelente para quienes quieren afinar su técnica y enfrentarse a proyectos similares a los que encontrarían en el mundo profesional.</p>
+                                            <div class="boton"><!--Div para añadir margen al botón-->
+                                                <a href="https://www.frontendmentor.io/">Más información</a>
+                                            </div>
+                                        </div>
+                                        <div class="columnaIntImg">
+                                            <img src="../IMGs/logoFrontendMentor.png">
+                                        </div>
+                                </div>
+
+                            </div>
+
+                        </div><!--Fin del div del grupo 3-->
+
+                    </div><!--Fin del div que contiene los grupos de páginas-->
+
+                </div><!--Fin del bloque de las páginas de interés-->
+
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="footer-cols">
+                        <!-- Columna de contacto -->
+                        <div class="footer-col">
+                            <h3><i>Puntos de informático</i></h3>
+                            <ul>
+                                <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Columna de navegación -->
+                        <div class="footer-col">
+                            <h3><i>Navegación</i></h3>
+                            <ul>
+                                <li><a href="Index.html">Inicio</a></li>
+                                <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                                <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Columna de información -->
+                        <div class="footer-col">
+                            <h3><i>Información</i></h3>
+                            <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                            <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                        </div>
+                    </div>
+                
+                    <!-- Línea de derechos de autor -->
+                    <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                        <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                    </div>
+                </div>
+            
+            </div><!--Fin del div estructura-->
+        </div><!--Fin del div outer-->
+    </body>
+</html>

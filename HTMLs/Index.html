@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home TFG Rodrigo Paradela</title><!--Título de la página-->
+    <link rel="stylesheet" href="../TFG.css"><!--Enlace al CSS de la página-->
+    <script defer src="../JSs/Index.js"></script><!--Enlace al JS de la página-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+    <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+    <meta name="description" content="Página web TFG de Rodrigo Paradela. Contiene recursos y puntos útiles para cualquier desarrollador."><!--Breve descripción de la página-->
+    <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+    <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->
+</head>
+<body>
+    <div class="outer" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+        <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+
+            <!--TÍTULO-->
+            <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                <p><i>El perfecto cuaderno de bitácora para un desarrollador.</i></p><!--Subtítulo de la página-->
+            </div><!--Fin del div titulo-->
+
+            <!--MENÚ DESPLEGABLE-->
+            <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                    <li><a href="PaginasInteres.html">Páginas de Interés</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                    <li><a href="">Puntos de Informático ⬇</a>
+                        <ul><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li-->
+                            <li><a href="BuenasPracticas.html">Buenas Prácticas</a></li>
+                            <li><a href="SeguridadInformatica.html">Seguridad Informática</a></li>
+                            <li><a href="TemasImportantes.html">Temas importantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="HerramientasUtiles.html">Herramientas Útiles</a></li>
+                    <li><a href="BiografiaInformatica.html">Biografía Informática</a>
+                    </li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>  
+            </div><!--Fin del menú desplegable-->
+
+            <!--SLIDER-->
+            <div class="cuerda"></div> <!--Div al que con un color de fondo le daremos sensación de que es el elemento que está desplazando las imágenes-->
+            <div id="slidertodo"><!--Div para posicionar el slider dentro de la web-->
+                <div id="slider"><!--Div que contiene las imágenes y se ajusta tanto a ellas como al div en el que está-->
+                    <img src="../IMGs/slider1.png" id="slider1">
+                    <img src="../IMGs/slider2.png" id="slider3">
+                    <img src="../IMGs/slider3.png" id="slider4">
+                    <img src="../IMGs/slider4.png" id="slider5">
+                    <img src="../IMGs/slider5.png" id="slider6">
+                    <img src="../IMGs/slider6.png" id="slider7">
+                    <img src="../IMGs/slider7.png" id="slider8">
+                    <img src="../IMGs/slider8.png" id="slider9">
+                    <img src="../IMGs/slider9.png" id="slider10">
+                    <!--Duplicamos las imágenes para evitar saltos en la animación-->
+                    <img src="../IMGs/slider1.png" id="slider1">
+                    <img src="../IMGs/slider2.png" id="slider3">
+                    <img src="../IMGs/slider3.png" id="slider4">
+                    <img src="../IMGs/slider4.png" id="slider5">
+                    <img src="../IMGs/slider5.png" id="slider6">
+                    <img src="../IMGs/slider6.png" id="slider7">
+                    <img src="../IMGs/slider7.png" id="slider8">
+                    <img src="../IMGs/slider8.png" id="slider9">
+                    <img src="../IMGs/slider9.png" id="slider10">
+                </div>
+            </div><!--Fin del Slider-->
+
+            <!--DESCRIPCIÓN-->
+            <div class="descripcion"><!--Añadimos una descripción con lo que vamos a encontrarnos en la página web, para este apartado simplemente añadiremos un div al que daremos diseño 
+                poseriormente, y un título h del apartado con un párrafo p-->
+                <h1>¿Qué nos encontraremos?</h1>
+                <p class="descripcion-texto">
+                    Esta página web nace como un proyecto personal con el objetivo de reunir en un solo lugar algunos de los conocimientos y recursos más importantes que he ido adquiriendo a lo largo de mi trayectoria formativa en el mundo de la informática. Está pensada especialmente para estudiantes, desarrolladores en formación o cualquier persona interesada en ampliar sus habilidades técnicas y conocer buenas prácticas dentro del sector.<br><br>
+                    A lo largo del sitio encontrarás diferentes apartados que abarcan desde consejos para mantener y utilizar correctamente tu equipo, hasta principios fundamentales de programación y organización de proyectos. También dedico un espacio importante a la seguridad informática, donde recojo nociones básicas y recomendaciones para proteger nuestros datos y sistemas.<br><br>
+                    Además, he incluido una recopilación de herramientas útiles para el desarrollo y la gestión diaria de tareas, así como una sección con páginas de interés que considero imprescindibles para cualquier perfil técnico. Cada uno de estos bloques ha sido desarrollado con la intención de aportar valor real, basado en experiencias prácticas y contenidos que he considerado especialmente útiles durante mi formación.<br><br>
+                    Espero que esta página te resulte útil, amena y que te anime a seguir explorando y aprendiendo en este apasionante campo.
+                  </p>
+            </div><!--Fin de la descripción-->
+            
+            <!--SECCIONES DESTACADAS-->
+            <div class="destacados"><!--Div con todo el bloque de las secciones destacadas-->
+                <h1 style="color: #1c1c1e ;text-align: center;">Secciones destacadas</h1><!--Alineamos el texto y le asignamos un color-->
+                <div class="secciones"><!--div para manejar todas las secciones en un bloque-->
+
+                    <div class="seccion" id="seccion1"><!--div para cada sección, posteriormente se posicionaran para que solo aparezca una de ellas-->
+                        <div class="columna-texto"><!--Dividimos el contenedor en dos columnas-->
+                            <h3>Herramientas imprescindibles para desarrolladores</h3>
+                            <p>Descubre una selección de herramientas esenciales que todo desarrollador debería conocer. Desde entornos de desarrollo como VS Code o Android Studio, hasta plataformas para gestionar tareas y proyectos como Trello, Jira o Notion. También incluimos extensiones de navegador que facilitan el análisis y la personalización de páginas web, como WhatFont o Web Developer, y recursos clave para diseño y frontend como Figma, Adobe XD o FontAwesome. Esta recopilación te permitirá optimizar tu productividad, organizar mejor tu flujo de trabajo y mejorar la calidad visual y funcional de tus proyectos.</p>
+                            <div class="boton"><!--Div para añadir margen al botón-->
+                                <a href="HerramientasUtiles.html">Más información</a><!--Enlace que te dirige a la sección destacada-->
+                            </div>
+                        </div>
+                        <div class="columna-img"><!--Segunda columna para imagen. Añadimos el div para tener más control sobre la imagen-->
+                            <img src="../IMGs/Herramientas Útiles home.png">
+                        </div>
+                    </div>
+
+                    <div class="seccion" id="seccion2"><!--div para cada sección-->
+                        <div class="columna-texto">
+                            <h3>Seguridad informática: protege tus datos</h3>
+                            <p>La seguridad informática es clave para cualquier profesional del mundo digital. En esta sección aprenderás a identificar las amenazas más comunes como el malware, el phishing o los ataques DDoS, y a aplicar buenas prácticas que reducen significativamente el riesgo de sufrir incidentes. También se abordan métodos para proteger tu dispositivo, como el uso de antivirus, cortafuegos o cifrado de datos, y se profundiza en los tipos de malware y su funcionamiento, desde troyanos hasta ransomware. Con estos conocimientos, estarás mejor preparado para proteger tu información personal y profesional frente a vulnerabilidades y ataques.
+                            <div class="boton"><!--Div para añadir margen al botón-->
+                                <a href="SeguridadInformatica.html">Más información</a><!--Enlace que te dirige a la sección destacada-->
+                            </div>
+                        </div>
+                        <div class="columna-img">
+                            <img src="../IMGs/SeguridadInformatica home.png">
+                        </div>
+                    </div>
+
+                    <div class="seccion" id="seccion3"><!--div para cada sección-->
+                        <div class="columna-texto">
+                            <h3>Páginas de interés: tus recursos clave</h3>
+                            <p>Explora una recopilación de páginas de interés especialmente seleccionadas para estudiantes y profesionales del ámbito informático. Incluye blogs técnicos, canales de documentación, foros especializados como Stack Overflow y comunidades activas como GitHub o Reddit. También se destacan plataformas de aprendizaje como FreeCodeCamp o MDN Web Docs, junto con sitios que ofrecen recursos prácticos para programación, diseño, ciberseguridad y más. Esta sección te permitirá acceder fácilmente a fuentes confiables, ampliar tus conocimientos y mantenerte actualizado en un entorno tecnológico en constante evolución.</p>
+                            <div class="boton"><!--Div para añadir margen al botón-->
+                                <a href="PaginasInteres.html">Más información</a><!--Enlace que te dirige a la sección destacada-->
+                            </div>
+                        </div>
+                        <div class="columna-img">
+                            <img src="../IMGs/PaginasInteres Home.png">
+                        </div>
+                    </div>
+
+                    <div class="botones"><!--Añadimos un div con dos botones y unos puntos en el medio.-->
+                        <button class="flechas" id="boton1" style="font-weight: 800;">&#8656;</button><!--El primer botón que aparecerá a la izquierda para volver a la sección anterior-->
+                        <div id="puntos"><!--Puntos que irán actualizando su formato dependiendo del bloque en el que el usuario este situado-->
+                            <span id="punto1">•</span>
+                            <span id="punto2">•</span>
+                            <span id="punto3">•</span>
+                        </div>
+                        <button class="flechas" id="boton2">&#8658;</button><!--Segundo botón para avanzar de sección-->
+                    </div>
+                </div><!--Fin de div de las secciones-->    
+            </div><!--Fin del bloque de las secciones destacadas-->   
+            
+            <!-- ESTADÍSTICAS -->
+            <div id="estadisticas" class="estadisticas"><!--Div que contiene todo el bloque de las estadísticas-->
+                <h1 style="color: #1c1c1e; margin-top:0;">Estadísticas de la web</h1><!--Asignamos un color al título-->
+                <div class="contenedor"><!--Div que contiene todaas las estadísticas para trabajar con todas en un mismo bloque-->
+
+                    <div class="estadistica"><!--Div que contiene las estadísticas por separado-->
+                        <div class="estadistica-box"><!--Div para darle color de fondo y sensación de tarjetas a las estadísticas-->
+                            <span class="icono">🌐</span>
+                            <h2 class="contador" data-contador="2000">0</h2><!--En el data-contador añadimos el número final al que va a llegar la estadística-->
+                            <p class="nEstadistica">HTML</p>
+                        </div>
+                    </div>
+                
+                    <div class="estadistica">
+                        <div class="estadistica-box">
+                            <span class="icono">🎨</span>
+                            <h2 class="contador" data-contador="3000">0</h2>
+                            <p class="nEstadistica">CSS</p>
+                        </div>
+                    </div>
+                
+                    <div class="estadistica">
+                        <div class="estadistica-box">
+                            <span class="icono">🧠</span>
+                            <h2 class="contador" data-contador="1500">0</h2>
+                            <p class="nEstadistica">JS</p>
+                        </div>
+                    </div>
+
+                    <div class="estadistica">
+                        <div class="estadistica-box">
+                            <span class="icono">🐘</span>
+                            <h2 class="contador" data-contador="1500">0</h2>
+                            <p class="nEstadistica">PHP</p>
+                        </div>
+                    </div>
+                
+                    <div class="estadistica">
+                        <div class="estadistica-box">
+                            <span class="icono">🧰</span>
+                            <h2 class="contador" data-contador="4">0</h2>
+                            <p class="nEstadistica">Herramientas</p>
+                        </div>
+                    </div>
+                
+                </div><!--Fin del div de las estadísticas-->
+            </div><!--Fin del bloque de las estadísticas-->
+
+            <!--HABILIDADES-->
+            <div class="contenedorHabilidades"><!--Primer div que contiene todo el bloque-->
+                <h1 style="margin-bottom: 40px;">MIS HABILIDADES PRINCIPALES</h1>
+                <div class="bloqueHabilidades"><!--Div que contiene todo el contenido de las habilidades junto a los botones-->
+                    <button id="btn-izq">←</button><!--Botón para volver hacia atrás, moverse hacia la izq-->
+
+                    <div class="divOverflow"><!--Div que usaremos para evitar que se vean las habilidades después de desplazarlas-->
+                        <div id="habilidades" class="habilidades"><!--Div que contiene las habilidades, el bloque que desplazaremos-->
+
+                            <div class="grupoHabilidades"><!--Dividimos las habilidades en grupos de 4 para que sea más sencillo al posicionarlos y desplazarlos-->
+                            <div class="habilidad">HTML</div>
+                            <div class="habilidad">CSS</div>
+                            <div class="habilidad">JavaScript</div>
+                            <div class="habilidad">Python</div>
+                            </div>
+
+                            <div class="grupoHabilidades">
+                            <div class="habilidad">Java</div>
+                            <div class="habilidad">PHP</div>
+                            <div class="habilidad">C#</div>
+                            <div class="habilidad">SQL</div>
+                            </div>
+
+                            <div class="grupoHabilidades">
+                            <div class="habilidad">React</div>
+                            <div class="habilidad">Node.js</div>
+                            <div class="habilidad">MongoDB</div>
+                            <div class="habilidad">Angular</div>
+                            </div>
+
+
+                        </div><!--Fin div habilidades-->
+                    </div><!--Fin div divOverflow-->
+
+                    <button id="btn-dcha">→</button><!--Botón para ir hacia delante, moverse hacia la dcha-->
+                </div><!--Fin div bloqueHabilidades-->
+            </div><!--Fin div contenedorHabilidades-->
+
+           <!-- FORMULARIO 3: DUDAS-->
+            <div class="formulario3">
+                <div class="bloqueFormulario">
+                    <div class="formularioDudas">
+                        <div class="fondoFormulario">
+                            <form method="POST" action="../PHPs/PhpFormulario3.php">
+                                <h1 class="tituloForm">¿Tienes alguna duda?</h1>
+                                <div class="apartForm">
+                                    <input type="text" name="nombre" placeholder="Nombre" required>
+                                </div>
+                                <div class="apartForm">
+                                    <input type="text" name="apellidos" placeholder="Apellidos" required>
+                                </div>
+                                <div class="apartForm">
+                                    <input type="email" name="correo" placeholder="Correo electrónico" required>
+                                </div>
+                                <div class="apartForm bloqueCheckbox">
+                                    <h2 class="subtitForm">¿Sobre qué secciones tienes dudas?</h2>
+                                    <div class="checkbox"><input type="checkbox" value="seccion1" name="seccion1"> Sección 1</div>
+                                    <div class="checkbox"><input type="checkbox" value="seccion2" name="seccion2"> Sección 2</div>
+                                    <div class="checkbox"><input type="checkbox" value="seccion3" name="seccion3"> Sección 3</div>
+                                    <div class="checkbox"><input type="checkbox" value="seccion4" name="seccion4"> Sección 4</div>
+                                </div>
+                                <div class="apartForm bloqueTextarea">
+                                    <h2 class="subtitForm">Explícanos tus dudas:</h2>
+                                    <textarea name="dudas"></textarea>
+                                </div>
+                                <div class="apartForm bloqueValoracion">
+                                    <h2 class="subtitForm">Valora tu experiencia:</h2>
+                                    <div class="estrellas">
+                                        <input type="radio" name="stars" id="star5" value="5"><label for="star5">★</label>
+                                        <input type="radio" name="stars" id="star4" value="4"><label for="star4">★</label>
+                                        <input type="radio" name="stars" id="star3" value="3"><label for="star3">★</label>
+                                        <input type="radio" name="stars" id="star2" value="2"><label for="star2">★</label>
+                                        <input type="radio" name="stars" id="star1" value="1"><label for="star1">★</label>
+                                    </div>
+                                </div>
+                                <div class="apartForm">
+                                    <input type="submit" value="Enviar dudas">
+                                    <input type="reset" value="Limpiar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="imgFormulario">
+                        <img src="../IMGs/FormularioDudas Home.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <div class="footer-cols">
+                    <!-- Columna de contacto -->
+                    <div class="footer-col">
+                        <h3><i>Puntos de informático</i></h3>
+                        <ul>
+                            <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                            <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                            <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                        </ul>
+                    </div>
+                
+                    <!-- Columna de navegación -->
+                    <div class="footer-col">
+                        <h3><i>Navegación</i></h3>
+                        <ul>
+                            <li><a href="Index.html">Inicio</a></li>
+                            <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                            <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                        </ul>
+                    </div>
+                
+                    <!-- Columna de información -->
+                    <div class="footer-col">
+                        <h3><i>Información</i></h3>
+                        <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                        <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                    </div>
+                </div>
+            
+                <!-- Línea de derechos de autor -->
+                <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                    <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                </div>
+            </div>
+
+        </div> <!--Cierre del div estructura-->
+    </div> <!--Cierre del div outer-->
+</body>
+</html>
+
+
+
+

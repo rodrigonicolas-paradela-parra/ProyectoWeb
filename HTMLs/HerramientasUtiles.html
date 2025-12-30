@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Herramientas Útiles TFG Rodrigo Paradela</title><!--Título de la página-->
+        <link rel="stylesheet" href="../TFG.css"><!--Enlace al CSS de la página-->
+        <script defer src="../JSs/HerramientasUtiles.js"></script><!--Enlace al JS de la página-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+        <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+        <meta name="description" content="Página web TFG de Rodrigo Paradela. Contiene recursos y puntos útiles para cualquier desarrollador."><!--Breve descripción de la página-->
+        <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+        <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->
+    </head>
+    <body>
+        <div class="outer"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+            <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+    
+                <!--TÍTULO-->
+                <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                    <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                    <P><i>El perfecto cuaderno de bitácora para un desarrollador.</i></P><!--Subtítulo de la página-->
+                </div><!--Fin del div titulo-->
+    
+                <!--MENÚ DESPLEGABLE-->
+                <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                    <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="PaginasInteres.html">Páginas de interés</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                        <li><a href="">Puntos de Informático ⬇</a>
+                            <ul class="submenu"><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li correspondiente-->
+                                <li><a href="BuenasPracticas.html">Buenas Prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad Informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas importantes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="BiografiaInformatica.html">Biografía Informática</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>  
+                </div><!--Fin del menú desplegable-->
+
+                <!--DESCRIPCIÓN-->
+                <div class="descripcion" style="margin: 40px 5%;"><!--Div con todo el bloque de la descripción. Le damos un color de fondo blanco a diferendia de la home además de bajarle el padding inferior-->
+                    <h1>Potencia tu trabajo: herramientas esenciales para programadores y desarrolladores</h1><!--Título de la página-->
+                    <div class="descripcion-cols"><!--A diferencia de la home, div que contendrá dos columnas-->
+                        <div class="descripcion-coltexto"><!--Columna con un párrafo para el texto de la descripción-->
+                            <p class="descripcion-texto">
+                                En el mundo del desarrollo y la informática, saber programar es solo una parte del camino. El entorno en el que trabajas, las herramientas que utilizas y tu capacidad para organizarte son factores decisivos que pueden multiplicar tu productividad o frenarla por completo. Usar las aplicaciones adecuadas no solo te ahorra tiempo, sino que también mejora la calidad de tu código, tu concentración y tu eficiencia general.<br><br>
+                                Esta sección reúne una selección de herramientas indispensables para cualquier informático o desarrollador que quiera trabajar de forma profesional y optimizada. Desde los editores de código más versátiles hasta plataformas de diseño, gestión de proyectos, extensiones útiles para el navegador y recursos visuales que harán tu día a día más ágil y completo.<br><br>
+                                Más allá de aprender lenguajes, saber elegir y dominar estas herramientas es lo que te permite mantenerte competitivo en un entorno que evoluciona constantemente. Ya sea que estés empezando o buscando mejorar tus flujos de trabajo, aquí encontrarás aliados clave para llevar tus habilidades al siguiente nivel. ¡Descubre cuáles pueden marcar la diferencia en tus proyectos!
+                            </p>
+                        </div><!--Fin de la columna del texto-->    
+
+                        <div class="descripcion-colimg"><!--Columna para la imagen que aparecerá al lado del texto-->
+                            <img src="../IMGs/descripcionherramientasutiles.png">
+                        </div><!--Fin de la columna de la imagen-->
+                    </div><!--Fin del div que contiene las dos columnas-->
+                </div><!--Fin de la descripción-->
+
+                <div id="overlay" class="overlay" style="display: none;"></div><!--Div que servirá para añadir el fondo borroso cuando se despliegue la ventana-->
+
+                <!-- PRIMER GRUPO DE HERRAMIENTAS ÚTILES -->
+                <div class="grupoHerramientas"><!--Div con todo el bloque de las herrmamientas-->
+                    <div class="contenidoHerramientas"><!--Div para posicionar el contenido-->
+                        <h2>IDEs y Editores de Código</h2><!--Título del grupo-->
+                        <div class="herramientas"><!--div con las herramientas-->
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(0)"><!--Llamamos a la función para el popup con el texto correspondiente-->
+                                <span>
+                                    <h3>Visual Studio Code</h3>
+                                    <img src="../IMGs/logovscode.png">
+                                </span>
+                                <p>
+                                    Editor de código ligero pero potente, desarrollado por Microsoft. Soporta una gran variedad de lenguajes y extensiones, ideal para desarrollo web, scripting y proyectos de software modernos.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(1)">
+                                <span>
+                                    <h3>IntelliJ IDEA</h3>
+                                    <img src="../IMGs/logointellij.png">
+                                </span>
+                                <p>
+                                    IDE potente para desarrollo en Java y otros lenguajes, con herramientas avanzadas de análisis de código, refactorización y una experiencia de usuario fluida. Muy popular entre desarrolladores backend.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(2)">
+                                <span>
+                                    <h3>NetBeans</h3>
+                                    <img src="../IMGs/logonetbeans.png">
+                                </span>
+                                <p>
+                                    IDE de código abierto enfocado en Java, aunque también soporta otros lenguajes. Es conocido por su simplicidad, integración con Maven y soporte para debugging visual.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(3)">
+                                <span>
+                                    <h3>Eclipse</h3>
+                                    <img src="../IMGs/logoEclipse.png">
+                                </span>
+                                <p>
+                                    Un IDE robusto y extensible ampliamente utilizado en el desarrollo Java empresarial. Tiene gran soporte de plugins y es común en entornos corporativos y proyectos grandes.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(4)">
+                                <span>
+                                    <h3>Android Studio</h3>
+                                    <img src="../IMGs/logoAndroidstudio.png">
+                                </span>
+                                <p>
+                                    Entorno de desarrollo oficial para aplicaciones Android. Basado en IntelliJ, incluye emulador, editor visual y herramientas especializadas para interfaces móviles y rendimiento.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(5)">
+                                <span>
+                                    <h3>Sublime Text</h3>
+                                    <img src="../IMGs/logoSublimetext.png">
+                                </span>
+                                <p>
+                                    Editor de texto ultra ligero y rápido, ideal para tareas rápidas o desarrollo en múltiples lenguajes. Muy apreciado por su velocidad, atajos y su potente sistema de plugins.
+                                </p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- SEGUNDO GRUPO DE HERRAMIENTAS ÚTILES -->
+                <div class="grupoHerramientas">
+                    <div class="contenidoHerramientas">
+                        <h2>Herramientas de gestión y productividad</h2>
+                        <div class="herramientas">
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(6)">
+                                <span>
+                                    <h3>Notion</h3>
+                                    <img src="../IMGs/logonotion.png">
+                                </span>
+                                <p>
+                                    Plataforma todo-en-uno para organización personal y de equipos. Permite crear bases de datos, wikis, listas de tareas y notas, con gran flexibilidad y colaboración en tiempo real.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(7)">
+                                <span>
+                                    <h3>Trello</h3>
+                                    <img src="../IMGs/logotrello.png">
+                                </span>
+                                <p>
+                                    Herramienta basada en tableros Kanban para gestión visual de proyectos y tareas. Fácil de usar, con tarjetas personalizables y múltiples integraciones para mejorar la productividad del equipo.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(8)">
+                                <span>
+                                    <h3>Jira</h3>
+                                    <img src="../IMGs/logojira.png">
+                                </span>
+                                <p>
+                                    Software avanzado para gestión ágil de proyectos y seguimiento de incidencias. Muy utilizado en desarrollo de software, con soporte para Scrum, Kanban y flujos de trabajo personalizados.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(9)">
+                                <span>
+                                    <h3>ClickUp</h3>
+                                    <img src="../IMGs/logoclickup.png">
+                                </span>
+                                <p>
+                                    Plataforma integral de gestión de tareas y proyectos con múltiples vistas personalizables. Incluye gestión de documentos, seguimiento del tiempo y automatizaciones para maximizar la productividad.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(10)">
+                                <span>
+                                    <h3>Evernote</h3>
+                                    <img src="../IMGs/logoevernote.png">
+                                </span>
+                                <p>
+                                    Aplicación para tomar notas y organizar ideas con sincronización en la nube. Soporta texto, imágenes, audio y archivos adjuntos, ideal para recopilar y acceder a información en cualquier dispositivo.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(11)">
+                                <span>
+                                    <h3>Asana</h3>
+                                    <img src="../IMGs/logoaasna.png">
+                                </span>
+                                <p>
+                                    Herramienta colaborativa para gestión de proyectos con énfasis en la asignación de tareas, calendarios y seguimiento de objetivos. Facilita la comunicación entre equipos y la planificación eficiente.
+                                </p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- TERCER GRUPO DE HERRAMIENTAS ÚTILES -->
+                <div class="grupoHerramientas">
+                    <div class="contenidoHerramientas">
+                        <h2>Extensiones de navegador útiles</h2>
+                        <div class="herramientas">
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(12)">
+                                <span>
+                                    <h3>Wappalyzer</h3>
+                                    <img src="../IMGs/logowappalyzer.png">
+                                </span>
+                                <p>
+                                    Extensión que detecta tecnologías usadas en sitios web, incluyendo frameworks, servidores, sistemas de análisis y más. Ideal para desarrolladores y profesionales de marketing.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(13)">
+                                <span>
+                                    <h3>Dark Reader</h3>
+                                    <img src="../IMGs/logodarkreader.png">
+                                </span>
+                                <p>
+                                    Permite activar un modo oscuro personalizable en cualquier página web, reduciendo la fatiga visual y mejorando la experiencia de navegación en entornos con poca luz.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(14)">
+                                <span>
+                                    <h3>uBlock Origin</h3>
+                                    <img src="../IMGs/logoublock.png">
+                                </span>
+                                <p>
+                                    Bloqueador eficiente de anuncios y rastreadores que mejora la velocidad de carga y protege la privacidad del usuario. Ligero y fácil de configurar.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(15)">
+                                <span>
+                                    <h3>JSON Formatter</h3>
+                                    <img src="../IMGs/logojsonformatter.png">
+                                </span>
+                                <p>
+                                    Extensión para visualizar y formatear archivos JSON directamente en el navegador, facilitando la lectura y depuración de datos en desarrollo web y APIs.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(16)">
+                                <span>
+                                    <h3>Web Developer</h3>
+                                    <img src="../IMGs/logowebdeveloper.png">
+                                </span>
+                                <p>
+                                    Conjunto de herramientas para desarrolladores web que permite inspeccionar, modificar y probar aspectos de las páginas, como CSS, imágenes, formularios y más.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(17)">
+                                <span>
+                                    <h3>WhatFont</h3>
+                                    <img src="../IMGs/logowhatfont.png">
+                                </span>
+                                <p>
+                                    Herramienta sencilla para identificar las fuentes tipográficas usadas en cualquier página web con solo pasar el cursor, útil para diseñadores y desarrolladores frontend.
+                                </p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- CUARTO GRUPO DE HERRAMIENTAS ÚTILES -->
+                <div class="grupoHerramientas">
+                    <div class="contenidoHerramientas">
+                        <h2>Herramientas para diseño y frontend</h2>
+                        <div class="herramientas">
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(18)">
+                                <span>
+                                    <h3>Figma</h3>
+                                    <img src="../IMGs/logofirma.png">
+                                </span>
+                                <p>
+                                    Herramienta de diseño colaborativo basada en la nube que permite crear interfaces, prototipos y sistemas de diseño con facilidad. Ideal para equipos que trabajan de forma remota.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(19)">
+                                <span>
+                                    <h3>Adobe XD</h3>
+                                    <img src="../IMGs/logoadobexd.png">
+                                </span>
+                                <p>
+                                    Plataforma para diseño y prototipado de experiencias de usuario que ofrece integración con otras herramientas Adobe, facilitando la creación de interfaces interactivas y animaciones.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(20)">
+                                <span>
+                                    <h3>FontAwesome</h3>
+                                    <img src="../IMGs/logofontawesome.png">
+                                </span>
+                                <p>
+                                    Biblioteca de iconos vectoriales y herramientas para integrarlos fácilmente en proyectos web y móviles. Proporciona íconos escalables que mejoran la apariencia visual y usabilidad.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(21)">
+                                <span>
+                                    <h3>Google Fonts</h3>
+                                    <img src="../IMGs/logogooglefonts.png">
+                                </span>
+                                <p>
+                                    Repositorio gratuito de fuentes tipográficas para la web, que facilita la incorporación de tipografías variadas y optimizadas, mejorando la estética y legibilidad de los sitios web.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(22)">
+                                <span>
+                                    <h3>Coolors</h3>
+                                    <img src="../IMGs/logocoolors.png">
+                                </span>
+                                <p>
+                                    Generador de paletas de colores rápido y fácil de usar, que ayuda a diseñadores a elegir combinaciones armónicas para proyectos digitales, branding y diseño gráfico.
+                                </p>
+                            </div>
+                        
+                            <div class="herramienta" onclick="mostrarInformacion(23)">
+                                <span>
+                                    <h3>Canva</h3>
+                                    <img src="../IMGs/logocanva.png">
+                                </span>
+                                <p>
+                                    Plataforma intuitiva para diseño gráfico que ofrece plantillas y herramientas para crear presentaciones, posters, redes sociales y más, ideal para usuarios sin experiencia en diseño.
+                                </p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOQUE DESPLEGABLE DE INFORMACIÓN -->
+                <div id="bloqueDesplegable" class="popup" style="display: none;"><!--Div para mostrar el contenido de las herramientas en una ventana que aparece-->
+                    <div class="contenidoDesplegable"><!--Div con el contenido del popup-->
+                        <button onclick="cerrarDesplegable()">✖</button><!--Botón para cerrar la ventana-->
+                        <h3 id="tituloDesplegable"></h3>
+                        <p id="descripcionDesplegable"></p><!--Contenido que cambiaremos con JS dependiendo de la herramienta-->
+                    </div><!--Div del contenido-->
+                </div><!--Div de la ventana-->
+
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="footer-cols">
+                        <div class="footer-col">
+                            <h3><i>Puntos de informático</i></h3>
+                            <ul>
+                                <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <h3><i>Navegación</i></h3>
+                            <ul>
+                                <li><a href="Index.html">Inicio</a></li>
+                                <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                                <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <h3><i>Información</i></h3>
+                            <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                            <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                        </div>
+                    </div>
+                
+                    <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                        <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                    </div>
+                </div>
+            
+            </div><!--Fin del div estructura-->
+        </div><!--Fin del div outer-->
+    </body>
+</html>

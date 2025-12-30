@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contacto TFG Rodrigo Paradela</title><!--Título de la página-->
+        <link rel="stylesheet" href="../TFG.css"><!--Enlace al CSS de la página-->
+        <script defer src="../JSs/Contacto.js"></script><!--Enlace al JS de la página-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+        <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+        <meta name="description" content="Página web TFG de Rodrigo Paradela. Contiene recursos y puntos útiles para cualquier desarrollador."><!--Breve descripción de la página-->
+        <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+        <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->
+    </head>
+    <body>
+        <div class="outer"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+            <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+    
+                <!--TÍTULO-->
+                <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                    <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                    <p><i>El perfecto cuaderno de bitácora para un desarrollador.</i></p><!--Subtítulo de la página-->
+                </div><!--Fin del div titulo-->
+    
+                <!--MENÚ DESPLEGABLE-->
+                <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                    <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="PaginasInteres.html">Páginas de interés</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                        <li><a href="">Puntos de Informático ⬇</a>
+                            <ul class="submenu"><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li correspondiente-->
+                                <li><a href="BuenasPracticas.html">Buenas Prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad Informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas importantes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="HerramientasUtiles.html">Herramientas Útiles</a></li>
+                        <li><a href="BiografiaInformatica.html">Biografía Informática</a></li>
+                    </ul>  
+                </div><!--Fin del menú desplegable-->
+    
+                <!--DESCRIPCIÓN-->
+                <div class="descripcion" style="margin: 40px 5%;"><!--Añadimos una descripción con lo que vamos a encontrarnos en la página web, para este apartado simplemente añadiremos un div al que daremos diseño poseriormente, y un título h3 del apartado con un párrafo p-->
+                    <h1>Elige el tipo de formulario que necesitas</h1>
+                    <p class="descripcion-texto">
+                        Ponemos a tu disposición tres tipos de formularios diseñados para adaptarse a tus necesidades concretas.  
+                        Si deseas ponerte en contacto con nosotros para temas generales, sugerencias, propuestas o cualquier otro asunto no técnico,  
+                        selecciona el formulario de <strong>Contacto</strong>.  
+                        Si estás experimentando algún error en la web, tienes dudas relacionadas con aspectos técnicos o necesitas asistencia,  
+                        utiliza el formulario de <strong>Soporte técnico</strong>.  
+                        Por último, si tienes preguntas sobre el contenido de la página, los apartados o el funcionamiento de algún recurso,  
+                        el formulario de <strong>Dudas</strong> es el indicado para ti.  
+                        <br><br>
+                        Selecciona la opción que mejor se adapte a lo que necesitas y completa el formulario correspondiente.  
+                        ¡Estaremos encantados de ayudarte!
+                    </p>
+                </div><!--Fin de la descripción-->
+
+                <!--FORMULARIOS-->
+                <div class="formularios">
+                    <div class="grupos">
+                        <div class="activo"></div>
+                        <div class="grupo">Contacto</div>
+                        <div class="grupo">Soporte</div>
+                        <div class="grupo">Dudas</div>
+                    </div>
+                
+                    <div class="bloquesGrupos">
+                    
+                        <!-- FORMULARIO 1-->
+                        <div class="formulario1">
+                            <div class="bloqueFormulario">
+                                <div class="formularioDudas">
+                                    <div class="fondoFormulario">
+                                        <form method="POST" action="../PHPs/PhpFormulario1.php">
+                                            <h1 class="tituloForm">Formulario de Contacto</h1>
+                                            <div class="apartForm">
+                                                <input type="text" id="nombre1" name="nombre1" placeholder="Nombre completo" required>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="email" id="email1" name="email1" placeholder="Correo electrónico" required>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="text" id="asunto1" name="asunto1" placeholder="Asunto" required>
+                                            </div>
+                                            <div class="apartForm bloqueTextarea">
+                                                <textarea id="mensaje1" name="mensaje1" placeholder="Mensaje" rows="5" required></textarea>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="submit" value="Enviar mensaje">
+                                                <input type="reset" value="Limpiar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="imgFormulario">
+                                    <img src="../IMGs/FormularioContacto.png">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- FORMULARIO 2-->
+                        <div class="formulario2" style="opacity: 0; pointer-events: none;">
+                            <div class="bloqueFormulario">
+                                <div class="formularioDudas">
+                                    <div class="fondoFormulario">
+                                        <form method="POST" action="../PHPs/PhpFormulario2.php">
+                                            <h1 class="tituloForm">Formulario de soporte técnico</h1>
+                                            <div class="apartForm">
+                                                <input type="text" id="nombre2" name="nombre2" placeholder="Nombre" required>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="email" id="email2" name="email2" placeholder="Correo electrónico" required>
+                                            </div>
+                                            <div class="apartForm">
+                                                <select id="problema2" name="problema2">
+                                                    <option disabled selected>Tipo de problema</option>
+                                                    <option>Error en la web</option>
+                                                    <option>Consulta sobre código</option>
+                                                    <option>Otro problema técnico</option>
+                                                </select>
+                                            </div>
+                                            <div class="apartForm bloqueTextarea">
+                                                <textarea id="descripcion2" name="descripcion2" placeholder="Descripción detallada" rows="5" required></textarea>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="file" id="archivo2" name="archivo2">
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="submit" value="Enviar solicitud">
+                                                <input type="reset" value="Limpiar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="imgFormulario">
+                                    <img src="../IMGs/FormularioSoporte.png">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- FORMULARIO 3-->
+                        <div class="formulario3" style="opacity: 0; pointer-events: none;">
+                            <div class="bloqueFormulario">
+                                <div class="formularioDudas">
+                                    <div class="fondoFormulario">
+                                        <form method="POST" action="../PHPs/PhpFormulario3.php">
+                                            <h1 class="tituloForm">¿Tienes alguna duda?</h1>
+                                            <div class="apartForm">
+                                                <input type="text" name="nombre" placeholder="Nombre" required>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="text" name="apellidos" placeholder="Apellidos" required>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="email" name="correo" placeholder="Correo electrónico" required>
+                                            </div>
+                                            <div class="apartForm bloqueCheckbox">
+                                                <h2 class="subtitForm">¿Sobre qué secciones tienes dudas?</h2>
+                                                <div class="checkbox"><input type="checkbox" value="seccion1" name="seccion1"> Sección 1</div>
+                                                <div class="checkbox"><input type="checkbox" value="seccion2" name="seccion2"> Sección 2</div>
+                                                <div class="checkbox"><input type="checkbox" value="seccion3" name="seccion3"> Sección 3</div>
+                                                <div class="checkbox"><input type="checkbox" value="seccion4" name="seccion4"> Sección 4</div>
+                                            </div>
+                                            <div class="apartForm bloqueTextarea">
+                                                <h2 class="subtitForm">Explícanos tus dudas:</h2>
+                                                <textarea name="dudas"></textarea>
+                                            </div>
+                                            <div class="apartForm bloqueValoracion">
+                                                <h2 class="subtitForm">Valora tu experiencia:</h2>
+                                                <div class="estrellas">
+                                                    <input type="radio" name="stars" id="star5" value="5"><label for="star5">★</label>
+                                                    <input type="radio" name="stars" id="star4" value="4"><label for="star4">★</label>
+                                                    <input type="radio" name="stars" id="star3" value="3"><label for="star3">★</label>
+                                                    <input type="radio" name="stars" id="star2" value="2"><label for="star2">★</label>
+                                                    <input type="radio" name="stars" id="star1" value="1"><label for="star1">★</label>
+                                                </div>
+                                            </div>
+                                            <div class="apartForm">
+                                                <input type="submit" value="Enviar dudas">
+                                                <input type="reset" value="Limpiar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="imgFormulario">
+                                    <img src="../IMGs/FormularioDudas Home.png">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="footer-cols">
+                        <div class="footer-col">
+                            <h3><i>Puntos de informático</i></h3>
+                            <ul>
+                                <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <h3><i>Navegación</i></h3>
+                            <ul>
+                                <li><a href="Index.html">Inicio</a></li>
+                                <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                                <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-col">
+                            <h3><i>Información</i></h3>
+                            <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                            <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                        </div>
+                    </div>
+                
+                    <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                        <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                    </div>
+                </div>
+            
+            </div><!--Fin del div estructura-->
+        </div><!--Fin del div outer-->
+    </body>
+</html>

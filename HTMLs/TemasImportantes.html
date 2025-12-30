@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temas Importantes TFG Rodrigo Paradela</title><!--Título de la página-->
+        <link rel="stylesheet" href="../TFG.css"><!--Enlace al CSS de la página-->
+        <script defer src="../JSs/Desplegables.js"></script><!--Enlace al JS de la página-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"><!--Cargamos la fuente que vamos a usar de Google Fonts-->
+        <meta charset="utf-8"><!--Codificación de la página para que se lean correctamente los acentos, "ñ"...-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que la página se adapte a cualquier dispositivo-->
+        <meta name="description" content="Buenas prácticas para sacar el máximo rendimiento a tu ordenador y mejorar tu productividad como informático. Consejos sobre uso eficiente, programación y mantenimiento del equipo."><!--Breve descripción de la página-->
+        <meta name="author" content="Rodrigo Paradela"><!--Añadimos el autor de la página-->
+        <meta name="keywords" content="TFG, DAM, desarrollo, recursos, informática, programación, diseño web"><!--Palabras clave para que los buscadores encuentren la página (SEO)-->    
+    </head>
+    <body>
+        <div class="outer"><!--Creamos un div exterior que dará margen con el final de la pantalla además de color de relleno a la web-->
+            <div class="estructura"><!--Div que contendrá todo el contenido de la página para para poder trabajar con todo el contenido como un único bloque-->
+    
+                <!--TÍTULO-->
+                <div class="titulo"><!--Div que contendrá el encabezado de la página con el título y el subtitulo de ella-->
+                    <h1><i><b>EL RINCÓN DEL DESARROLLADOR</b></i></h1><!--Título de la página-->
+                    <p><i>El perfecto cuaderno de bitácora para un desarrollador.</i></p><!--Subtítulo de la página-->
+                </div><!--Fin del div titulo-->
+    
+                <!--MENÚ DESPLEGABLE-->
+                <div class="menu"><!--Div que contendrá el menú desplegable de la página -->
+                    <ul class="listamenu"><!--Sigue una estructura de una lista a la que daremos flexbox para que se alineen-->
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="PaginasInteres.html">Páginas de interés</a></li><!--Dentro de los elementos li añadimos unos enlaces <a> que llevarán a los demás html dentro de la página-->
+                        <li><a href="">Puntos de Informático ⬇</a>
+                            <ul class="submenu"><!--Para los submenús agregamos una nueva lista dentro de los li que queramos. Esta lista la ocultaremos con CSS hasta que el cursor se posicione sobre el li correspondiente-->
+                                <li><a href="BuenasPracticas.html">Buenas Prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad Informática</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="HerramientasUtiles.html">Herramientas Útiles</a></li>
+                        <li><a href="BiografiaInformatica.html">Biografía Informática</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>  
+                </div><!--Fin del menú desplegable-->
+
+                <!--DESCRIPCIÓN-->
+                <div class="descripcion" style="margin: 40px 5%;"><!--Div con todo el bloque de la descripción. Le damos un color de fondo blanco a diferendia de la home además de bajarle el padding inferior-->
+                    <h1>Domina lo esencial: conceptos clave para todo informático y programador</h1><!--Título de la página-->
+                    <div class="descripcion-cols"><!--A diferencia de la home, div que contendrá dos columnas-->
+                        <div class="descripcion-coltexto"><!--Columna con un párrafo para el texto de la descripción-->
+                            <p class="descripcion-texto">
+                                En el mundo de la informática, no basta con saber escribir código. Entender cómo funcionan los sistemas operativos, cómo se comunican las redes, cómo organizar bases de datos o cómo estructurar un programa correctamente son pilares que marcan la diferencia entre un principiante y un profesional competente.<br><br>
+                                Esta sección reúne los conocimientos fundamentales que todo informático o programador debería tener presentes, más allá del lenguaje de programación que utilice. No se trata solo de aprender comandos o memorizar conceptos, sino de comprender cómo se integran todas estas áreas en el día a día del desarrollo y la administración de sistemas.<br><br>
+                                A través de los apartados que encontrarás más abajo, podrás repasar los elementos más importantes de cada temática: desde la gestión de procesos hasta los principios del diseño de bases de datos, pasando por el uso de herramientas esenciales como Git o el análisis de algoritmos. Ya estés iniciándote en este campo o quieras reforzar tu base técnica, aquí encontrarás una guía clara y útil para seguir creciendo como profesional. ¡Prepárate para consolidar lo esencial!
+                            </p>
+                        </div><!--Fin de la columna del texto-->    
+
+                        <div class="descripcion-colimg"><!--Columna para la imagen que aparecerá al lado del texto-->
+                            <img src="../IMGs/descripciontemasimp.png">
+                        </div><!--Fin de la columna de la imagen-->
+                    </div><!--Fin del div que contiene las dos columnas-->
+                </div><!--Fin de la descripción-->
+
+                <!--TEMAS IMPORTANTES DESPLEGABLES--><!--Siguen la misma estructura y diseño que los desplegables de buenas prácticas y seguridad informática, por eso tienen las mismas clases-->
+                <div class="buenasPracticas"><!--Div que contiene todo el bloque de los desplegables de los temas importantes-->
+                <div class="bloqueBuenasPracticas"><!--Div que contiene los desplegables juntos-->
+                    
+                    <div class="desplegable"><!--Div que muestra el nombre del primer grupo y sirve como botón para mostrar el desplegable que es el div de debajo-->
+                        <span>Sistemas operativos<br><p style="font-size: 14px; margin: 0; padding: 0;">Gestiona mejor tu equipo comprendiendo cómo el sistema operativo organiza procesos, archivos y permisos.</p></span><span>+</span><!--Añadimos el título del grupo con una breve descripción además de un "+" para dar la sensación de desplegable-->
+                    </div><!--Fin del div con el título del grupo-->
+                    <div class="grupoBuenasPrac"><!--Div que contiene todo el contenido del primer desplegable-->
+                        
+                        <div class="desplegable2"><!--Div con el título del segundo desplegable-->
+                            <span>Procesos e hilos: el motor interno del sistema</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        El sistema operativo administra los programas que se están ejecutando mediante procesos y hilos. Un proceso es una instancia de un programa en ejecución, mientras que un hilo es una unidad más pequeña de ejecución dentro de ese proceso.
+                                    </p>
+                                    <p>
+                                        Comprender esta gestión ayuda a optimizar el rendimiento, detectar bloqueos o cuelgues, y entender cómo se reparten los recursos del sistema entre diferentes tareas.
+                                    </p>
+                                    <p>
+                                        Herramientas como el Administrador de tareas (Windows) o el comando top en Linux permiten visualizar y controlar procesos activos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Sistemas de archivos: Cómo se organiza la información en tu sistema</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Un sistema de archivos define cómo se almacenan y organizan los datos en el disco. Existen varios tipos como NTFS, FAT32, ext4, entre otros.
+                                    </p>
+                                    <p>
+                                        Conocer sus diferencias permite elegir el adecuado según el sistema operativo o el uso del dispositivo (por ejemplo, para discos duros externos o sistemas duales).
+                                    </p>
+                                    <p>
+                                        También implica entender rutas, estructuras de carpetas, nombres válidos, permisos de acceso, y cómo mantener una jerarquía ordenada.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Permisos y seguridad: Controla quién puede hacer qué en tu equipo</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Los permisos determinan qué usuarios pueden leer, modificar o ejecutar archivos y aplicaciones.
+                                    </p>
+                                    <p>
+                                        En sistemas como Linux, los permisos están organizados en niveles: propietario, grupo y otros. En Windows se gestiona mediante ACLs (Listas de Control de Acceso).
+                                    </p>
+                                    <p>
+                                        Una buena configuración evita accesos no autorizados y protege la integridad del sistema. También es fundamental conocer el concepto de usuarios administradores vs usuarios estándar.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                      
+
+                        <div class="desplegable2">
+                            <span>Domina la consola: tu acceso directo al sistema</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        La terminal (o consola) permite interactuar con el sistema operativo de forma más directa y flexible que las interfaces gráficas.
+                                    </p>
+                                    <p>
+                                        Aprender comandos básicos como cd, ls, mkdir, rm, cp, mv en Linux/macOS o su equivalente en PowerShell/Command Prompt en Windows, te permite navegar por el sistema, crear o mover archivos, y automatizar tareas.
+                                    </p>
+                                    <p>
+                                        Es una herramienta imprescindible para desarrolladores, administradores de sistemas y usuarios avanzados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div><!--Fin del div con el contenido del primer desplegable-->
+
+                    <div class="desplegable">
+                        <span>Redes y protocolos<br><p style="font-size: 14px; margin: 0; padding: 0;">Comprender cómo se conectan los dispositivos y se transmiten los datos es clave para moverse con soltura en cualquier entorno digital.</p></span><span>+</span>
+                    </div>
+                    <div class="grupoBuenasPrac">
+                        
+                        <div class="desplegable2">
+                            <span>Modelo OSI y TCP/IP: Entendiendo las capas de la comunicación en red</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        El modelo OSI y el modelo TCP/IP son esquemas conceptuales que explican cómo los datos viajan de un dispositivo a otro a través de una red.
+                                    </p>
+                                    <p>
+                                        El modelo OSI divide el proceso en 7 capas (desde la física hasta la aplicación), mientras que TCP/IP lo simplifica en 4 capas.
+                                    </p>
+                                    <p>
+                                        Comprender estas capas te ayuda a identificar problemas de conexión, configurar redes y entender protocolos como HTTP, DNS o FTP en su contexto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Direcciones IP y subredes: Identifica dispositivos y organiza redes</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Cada dispositivo conectado a una red tiene una dirección IP, que puede ser estática o dinámica.
+                                    </p>
+                                    <p>
+                                        Las subredes permiten dividir redes grandes en segmentos más pequeños para mejorar la seguridad y eficiencia.
+                                    </p>
+                                    <p>
+                                        Aprender sobre máscaras de subred, rangos IP (como 192.168.x.x) y diferencias entre IPv4 e IPv6 es fundamental para configurar redes locales o resolver problemas de conectividad.
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Protocolos clave para moverse por Internet</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Los protocolos de red son reglas que permiten la comunicación entre dispositivos.
+                                    </p>
+                                    <p>Entre los más comunes están:</p>
+                                    <ul>
+                                        <li>DNS: traduce nombres de dominio a direcciones IP.</li>
+                                        <li>HTTP/HTTPS: protocolos para navegación web, el segundo con cifrado.</li>
+                                        <li>FTP/SFTP: para transferencia de archivos.</li>
+                                    </ul>
+                                    <p>
+                                        Conocer su funcionamiento básico te ayudará a entender cómo opera Internet, identificar errores comunes o mejorar configuraciones de red.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Seguridad en redes (firewalls, VPN, cifrado): Protege tu conexión</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>    
+                                        La seguridad en redes busca prevenir accesos no autorizados y proteger la integridad de los datos que viajan por Internet.
+                                    </p>
+                                    <ul>
+                                        <li>Firewalls: filtran el tráfico entrante y saliente.</li>
+                                        <li>VPNs: cifran la conexión para navegar con mayor privacidad.</li>
+                                        <li>Protocolos seguros: como HTTPS, SSH o TLS.</li>
+                                    </ul>
+                                    <p>
+                                        Tener nociones básicas de estas herramientas te permite navegar de forma más segura, especialmente en redes públicas o compartidas.
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="desplegable">
+                        <span>Fundamentos de la programación<br><p style="font-size: 14px; margin: 0; padding: 0;">Dominar los conceptos clave de la programación es esencial para escribir código eficiente, escalable y fácil de mantener.</p></span><span>+</span>
+                    </div>
+                    <div class="grupoBuenasPrac">
+                        
+                        <div class="desplegable2">
+                            <span>Algoritmos y estructuras de datos: La base lógica</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Los algoritmos son secuencias de pasos definidos para resolver un problema, y las estructuras de datos son formas de organizar la información que manipulan.
+                                    </p>
+                                    <p>
+                                        Dominar listas, pilas, colas, árboles, grafos, y técnicas de ordenación o búsqueda es esencial para optimizar el rendimiento de los programas.
+                                    </p>
+                                    <p>
+                                        Estos conceptos son la base de la informática, ya que impactan directamente en la eficiencia del software.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Paradigmas de programación: Diferentes formas de pensar y construir software</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Un paradigma de programación define el estilo o enfoque con el que se desarrolla software.
+                                    </p>
+                                    <p>Los principales son:</p>
+                                    <ul>
+                                        <li>Imperativo: indica paso a paso lo que debe hacerse.</li>
+                                        <li>Orientado a objetos: organiza el código en objetos que contienen datos y comportamientos.</li>
+                                        <li>Funcional: se basa en funciones puras y evita estados mutables.</li>
+                                        <li>Declarativo: indica qué se quiere lograr, no cómo.</li>
+                                    </ul>
+                                    <p>
+                                        Conocer estos enfoques permite elegir el más adecuado según el proyecto y el lenguaje.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Control de flujo y manejo de errores</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        El control de flujo permite que un programa tome decisiones y repita acciones, mediante estructuras como if, switch, for o while.
+                                    </p>
+                                    <p>
+                                        El manejo de errores permite que el programa reaccione ante fallos sin detenerse, usando mecanismos como try-catch, excepciones o validaciones.
+                                    </p>
+                                    <p>
+                                        Saber aplicar estas estructuras correctamente es vital para crear software robusto y fiable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Principios SOLID: Crea código limpio, escalable y mantenible</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Los principios SOLID son un conjunto de buenas prácticas para la programación orientada a objetos:
+                                    </p>
+                                    <ul>
+                                        <li><strong>S:</strong> Responsabilidad única</li>
+                                        <li><strong>O:</strong> Abierto/cerrado</li>
+                                        <li><strong>L:</strong> Sustitución de Liskov</li>
+                                        <li><strong>I:</strong> Segregación de interfaces</li>
+                                        <li><strong>D:</strong> Inversión de dependencias</li>
+                                    </ul>
+                                    <p>
+                                        Aplicarlos ayuda a que el código sea más fácil de entender, modificar y reutilizar a medida que crece el proyecto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="desplegable">
+                        <span>Bases de datos<br><p style="font-size: 14px; margin: 0; padding: 0;">Saber cómo se almacenan, consultan y estructuran los datos es clave para cualquier aplicación o sistema informático.</p></span><span>+</span>
+                    </div>
+                    <div class="grupoBuenasPrac">
+                        
+                        <div class="desplegable2">
+                            <span>Relacionales vs NoSQL</span><span>+</span> 
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Las bases de datos relacionales (como MySQL o PostgreSQL) organizan los datos en tablas con relaciones definidas, ideales para estructuras bien organizadas.
+                                    </p>
+                                    <p>
+                                        Las NoSQL (como MongoDB) permiten almacenar datos de forma más flexible, usando documentos, claves-valor o grafos.
+                                    </p>
+                                    <p>
+                                        Conocer las diferencias te ayudará a elegir el sistema más adecuado según el tipo de proyecto o aplicación que estés desarrollando.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Organiza los datos de forma lógica y eficiente</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Un buen diseño de base de datos es esencial para mantener la integridad y rendimiento.
+                                    </p>
+                                    <p>
+                                        Implica definir tablas, relaciones, claves primarias y foráneas, y aplicar reglas de normalización para evitar redundancias.
+                                    </p>
+                                    <p>
+                                        Diseñar correctamente desde el inicio facilita el mantenimiento, evita errores y mejora el rendimiento a largo plazo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>Consultas básicas con SQL</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        El lenguaje SQL permite interactuar con bases de datos relacionales.
+                                    </p>
+                                    <p>Algunas operaciones esenciales son:</p>
+                                    <ul>
+                                        <li>SELECT: consultar datos</li>
+                                        <li>INSERT: agregar datos</li>
+                                        <li>UPDATE: modificar datos</li>
+                                        <li>DELETE: eliminar registros</li>
+                                        <li>JOIN: combinar datos de varias tablas</li>
+                                    </ul>
+                                    <p>
+                                        Dominar estas consultas te permite trabajar directamente con la base de datos y aprovechar todo su potencial.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desplegable2">
+                            <span>ORMs (Object-Relational Mapping)</span><span>+</span>
+                        </div>
+                        <div class="buenaPrac">
+                            <div style="display: flex; gap: 20px; align-items: center; padding: 30px 20px;">
+                                <div>
+                                    <p>
+                                        Los ORMs permiten interactuar con bases de datos desde el código sin escribir directamente SQL.
+                                    </p>
+                                    <p>
+                                        Traducen objetos del lenguaje de programación (como Python o JavaScript) en registros de la base de datos.
+                                    </p>
+                                    <p>
+                                        Herramientas como SQLAlchemy, Django ORM o Sequelize hacen que el acceso a los datos sea más seguro, limpio y mantenible, especialmente en aplicaciones grandes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!--Fin del div de los desplegables-->
+                </div><!--Fin del div del bloque de los temas importantes-->
+            
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="footer-cols">
+                        <!-- Columna de contacto -->
+                        <div class="footer-col">
+                            <h3><i>Puntos de informático</i></h3>
+                            <ul>
+                                <li><a href="BuenasPracticas.html">Buenas prácticas</a></li>
+                                <li><a href="SeguridadInformatica.html">Seguridad informática</a></li>
+                                <li><a href="TemasImportantes.html">Temas imortantes</a></li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Columna de navegación -->
+                        <div class="footer-col">
+                            <h3><i>Navegación</i></h3>
+                            <ul>
+                                <li><a href="Index.html">Inicio</a></li>
+                                <li><a href="PaginasInteres.html">Páginas de interés</a></li>
+                                <li><a href="HerramientasUtiles.html">Herramientas útiles</a></li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Columna de información -->
+                        <div class="footer-col">
+                            <h3><i>Información</i></h3>
+                            <p><i>Desarrollado con HTML, CSS y JavaScript principalmente.</i></p>
+                            <p><a href="BiografiaInformatica.html">Biografía Informática</a></p>
+                        </div>
+                    </div>
+                
+                    <!-- Línea de derechos de autor -->
+                    <div style="text-align: center; margin-top: 1em;padding-bottom: 5px;">
+                        <span><i>© 2024 Rodrigo Paradela. Todos los derechos reservados.</i></span>
+                    </div>
+                </div>
+            
+            </div><!--Fin del div estructura-->
+        </div><!--Fin del div outer-->
+    </body>
+</html>
